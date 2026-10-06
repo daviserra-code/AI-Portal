@@ -1,13 +1,23 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { Newsreader, Public_Sans, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Atkinson_Hyperlegible, JetBrains_Mono } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
+import { SiteNav } from "@/components/SiteNav";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { themeInitScript } from "@/lib/theme";
 import { pillars, site } from "@/lib/site";
 import "./globals.css";
 
-const display = Newsreader({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-display", display: "swap" });
-const body = Public_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-body", display: "swap" });
-const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono", display: "swap" });
+const display = Bricolage_Grotesque({ subsets: ["latin"], weight: ["500", "800"], variable: "--font-display", display: "swap" });
+const body = Atkinson_Hyperlegible({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-body", display: "swap" });
+const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "600"], variable: "--font-mono", display: "swap" });
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fffdf6" },
+    { media: "(prefers-color-scheme: dark)", color: "#14130f" },
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -42,20 +52,21 @@ const orgLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={site.language} className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang={site.language} className={`${display.variable} ${body.variable} ${mono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body>
         <a className="skip" href="#main">Skip to content</a>
         <header className="site-header">
           <div className="wrap">
-            <Link className="logo" href="/">
-              AI<span>-</span>Portal
-            </Link>
-            <nav className="nav" aria-label="Sections">
-              {pillars.map((p) => (
-                <Link key={p.slug} href={`/${p.slug}`}>{p.name}</Link>
-              ))}
-              <Link href="/glossary">Glossary</Link>
-            </nav>
+            <div className="brand">
+              <Link className="logo" href="/" aria-label={`${site.name} home`}>
+                A<span className="i">i</span>-Portal
+              </Link>
+            </div>
+            <SiteNav links={[...pillars.map((p) => ({ href: `/${p.slug}`, label: p.name })), { href: "/glossary", label: "Glossary" }]} />
+            <ThemeToggle />
           </div>
         </header>
         <main id="main" className="wrap">{children}</main>
@@ -68,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/corrections">Corrections</Link>
               <a href="/feed.xml">RSS</a>
             </nav>
+            <span className="stamp">Checked by a human</span>
             <p>AI-Portal is written with AI and checked, edited and approved by a named person. Every article says how it was made.</p>
           </div>
         </footer>

@@ -75,9 +75,10 @@ export default async function ArticlePage({ params }: Props) {
       {a.status === "draft" && (
         <p className="draft-banner">Draft: not yet approved by the editor. Hidden from the public site and search engines.</p>
       )}
-      <span className="kicker">
-        <Link href={`/${p.slug}`}>{p.name}</Link> · {a.format}
-      </span>
+      <div className="kicker">
+        <Link className="tag" data-pillar={p.slug} href={`/${p.slug}`}>{p.name}</Link>
+        <span className="label">{a.format}</span>
+      </div>
       <h1>{a.title}</h1>
       <p className="dek">{a.dek}</p>
       <div className="byline">
@@ -110,6 +111,7 @@ export default async function ArticlePage({ params }: Props) {
         </section>
       )}
       <aside className="made">
+        <span className="stamp">{a.status === "approved" ? "Checked by a human" : "Awaiting the editor"}</span>
         <strong>How this was made</strong>
         <span>
           {a.madeWith === "ai-assisted"

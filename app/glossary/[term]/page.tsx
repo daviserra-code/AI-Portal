@@ -40,7 +40,7 @@ export default async function TermPage({ params }: Props) {
   return (
     <article className="article">
       {t.status === "draft" && <p className="draft-banner">Draft: not yet approved by the editor.</p>}
-      <span className="kicker"><Link href="/glossary">Glossary</Link></span>
+      <div className="kicker"><Link className="tag" data-pillar="glossary" href="/glossary">Glossary</Link></div>
       <h1>{t.term}</h1>
       <div className="answer">
         <span className="label">In one line</span>

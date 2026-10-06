@@ -6,7 +6,7 @@ export function ArticleCard({ article }: { article: Article }) {
   const pillar = pillarBySlug(article.pillar);
   return (
     <Link className="card" href={`/${article.pillar}/${article.slug}`}>
-      <span className="kicker">
+      <span className="tag" data-pillar={article.pillar}>
         {pillar?.name} · {article.format}
         {article.status === "draft" ? " · Draft" : ""}
       </span>
