@@ -24,7 +24,7 @@ Content lives in `content/` as Markdown with frontmatter:
 | `content/pages/` | About and the three policy pages | `/about`, `/editorial-policy`, `/ai-policy`, `/corrections` |
 | `content/observatory.json` | Dated, sourced SI Observatory entries | `/super-intelligence/observatory` |
 
-Every article starts as `status: draft`. Drafts are hidden from the production site, the sitemap, the RSS feed and `llms.txt`, and carry `noindex` in previews. To publish, the editor runs the pre-publish checklist from the Editorial Handbook, removes every `[EDITOR: ...]` note, then sets `status: approved` and `approvedBy: <name>`. `npm run check:content` (also run in CI) refuses an approved article with notes or placeholders left, without sources, or with a banned AI phrase.
+Every article starts as `status: draft`. Drafts are hidden from the production site, the sitemap, the RSS feed and `llms.txt`, and carry `noindex` in previews. Drafts arrive in a pull request, and the editor gets a Telegram message about it (`notify.yml`, needs the secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`). To publish, the editor runs the pre-publish checklist from the Editorial Handbook, removes every `[EDITOR: ...]` note, then comments `/publish` on the pull request. The Publish workflow (`publish.yml`) acts only on the repository owner's comment: it sets `status: approved` and `approvedBy` on each draft, runs the content check and the build, merges and deploys. If the check fails, it replies with the problems and publishes nothing. Editing the frontmatter by hand still works too. `npm run check:content` (also run in CI) refuses an approved article with notes or placeholders left, without sources, or with a banned AI phrase.
 
 ## Domains
 
