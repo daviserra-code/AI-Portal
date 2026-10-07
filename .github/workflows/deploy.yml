@@ -50,8 +50,11 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null || { echo "::error::HETZNER_SSH_KEY is not a valid private key without a passphrase"; exit 1; }
           ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
-          ssh -i ~/.ssh/deploy_key -p "$PORT" -o BatchMode=yes -o ConnectTimeout=15 "$USER@$HOST" true \
-            || { echo "::error::SSH login to $USER@$HOST:$PORT was refused. Check that ai-portal-deploy.pub is in that user's ~/.ssh/authorized_keys."; exit 1; }
+          if ! ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -p "$PORT" -o BatchMode=yes -o ConnectTimeout=15 "$USER@$HOST" true 2> ssh.err; then
+            reason=$(grep -v '^Warning' ssh.err | tail -n 1)
+            echo "::error::SSH to $USER@$HOST:$PORT failed: $reason"
+            exit 1
+          fi
 
       - name: Build image
         if: steps.secrets.outputs.ready == 'true'
