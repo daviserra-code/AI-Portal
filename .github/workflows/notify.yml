@@ -1,0 +1,28 @@
+name: Notify the editor
+# Sends the editor a Telegram message when a pull request with drafts opens.
+# The content engine's own drafts pull request sends its message from engine.yml.
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+    paths: ["content/articles/**", "content/glossary/**"]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Send
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
+        run: node scripts/editor/notify.mjs "${{ github.event.pull_request.html_url }}" $(gh pr diff ${{ github.event.pull_request.number }} --name-only)

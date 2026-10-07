@@ -29,7 +29,7 @@ Run it locally with `npm run engine:dry-run`, or `ANTHROPIC_API_KEY=... npm run 
 1. Stories with 2+ independent outlets go to triage, which scores each from 0 to 5 on reader impact, whether it will last, whether we can add something, and relevance to super intelligence and policy. A story needs 12 out of 20. A story that fits an existing page is listed as "update" instead of drafted.
 2. For each pick (max 2), the engine fetches the source pages and asks Claude for a draft that uses only those sources, with `[EDITOR: ...]` notes on anything to check. Source URLs the model did not receive are removed.
 3. The draft must pass `scripts/check-content.mjs`. A failing draft gets one retry with the errors, then is dropped.
-4. Drafts land in a pull request as `status: draft` with a checklist for each one. To publish, the editor fixes the text, deletes the notes, sets `status: approved` and `approvedBy`, and merges. To reject a story, delete its file; its links are in `seen.json`, so it never comes back.
+4. Drafts land in a pull request as `status: draft` with a checklist for each one. The editor gets a Telegram message with a link. To publish, the editor fixes the text, deletes the notes and comments `/publish` on the pull request (see README, "How publishing works"). To reject a story, delete its file; its links are in `seen.json`, so it never comes back.
 
 ## Repository setting
 
