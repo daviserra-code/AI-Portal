@@ -1,6 +1,6 @@
 name: Deploy
 # Builds the site image and runs it on the Hetzner server, next to AI-Radar.
-# Needs repository secrets HETZNER_HOST, HETZNER_USER and HETZNER_SSH_KEY
+# Needs HETZNER_HOST and HETZNER_USER (Actions secrets or variables) and the secret HETZNER_SSH_KEY
 # (optional: HETZNER_PORT, default 22). Until they exist, the job is skipped.
 on:
   push:
@@ -22,8 +22,8 @@ jobs:
       - name: Check deploy secrets
         id: secrets
         env:
-          HOST: ${{ secrets.HETZNER_HOST }}
-          USER: ${{ secrets.HETZNER_USER }}
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER || vars.HETZNER_USER }}
           KEY: ${{ secrets.HETZNER_SSH_KEY }}
         run: |
           if [ -n "$HOST" ] && [ -n "$USER" ] && [ -n "$KEY" ]; then
@@ -45,8 +45,8 @@ jobs:
       - name: Set up SSH
         if: steps.secrets.outputs.ready == 'true'
         env:
-          HOST: ${{ secrets.HETZNER_HOST }}
-          PORT: ${{ secrets.HETZNER_PORT || '22' }}
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
           KEY: ${{ secrets.HETZNER_SSH_KEY }}
         run: |
           install -m 700 -d ~/.ssh
@@ -57,9 +57,9 @@ jobs:
       - name: Ship and restart
         if: steps.secrets.outputs.ready == 'true'
         env:
-          HOST: ${{ secrets.HETZNER_HOST }}
-          USER: ${{ secrets.HETZNER_USER }}
-          PORT: ${{ secrets.HETZNER_PORT || '22' }}
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER || vars.HETZNER_USER }}
+          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
         run: |
           TAG="ai-portal:${GITHUB_SHA::12}"
           SSH="ssh -i ~/.ssh/deploy_key -p $PORT $USER@$HOST"
