@@ -239,7 +239,7 @@ const triageRows = scored.map((t) =>
 summary(`# Drafts for ${romeDate()}
 
 ${drafted.length
-  ? `${drafted.length} draft${drafted.length > 1 ? "s" : ""} for the editor. Nothing is published until you approve it.`
+  ? `${drafted.length} draft${drafted.length > 1 ? "s" : ""} for the editor. Nothing is published until you comment /publish on this pull request.`
   : "No drafts today. Nothing met the bar, which is fine."}
 
 ${drafted.map((r) => `## ${r.data.title}
@@ -251,7 +251,7 @@ ${drafted.map((r) => `## ${r.data.title}
 - [ ] Every fact matches a listed source
 - [ ] Every \`[EDITOR: ...]\` note is resolved and deleted
 - [ ] Reads like us: plain, calm, useful to a non-expert
-- [ ] Set \`status: approved\` and \`approvedBy: Davide Serra\`, or delete the file to reject the story
+- [ ] Keep it, or delete the file to reject the story
 `).join("\n")}
 ${results.filter((r) => r.error).map((r) => `- Could not draft "${r.pick.story.headline}": ${r.error}`).join("\n")}
 

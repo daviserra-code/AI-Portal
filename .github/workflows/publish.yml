@@ -1,0 +1,73 @@
+name: Publish
+# The editor publishes a pull request of drafts by commenting /publish on it. This marks every
+# draft in it as approved by the editor, checks and builds the site, merges, and deploys.
+# Only the repository owner's comment counts, so a draft never goes live without the editor.
+on:
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: publish-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: write
+
+env:
+  EDITOR: davide-serra # author slug in content/authors
+  PR: ${{ github.event.issue.number }}
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  publish:
+    if: >-
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/publish') &&
+      github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acknowledge
+        run: gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket >/dev/null
+      - name: Check out the pull request
+        run: gh pr checkout "$PR"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Approve the drafts
+        run: |
+          FILES=$(gh pr diff "$PR" --name-only | grep -E '^content/(articles|glossary)/[^/]+\.md$' || true)
+          if [ -z "$FILES" ]; then
+            gh pr comment "$PR" --body "There are no drafts in this pull request, so nothing was published."
+            exit 1
+          fi
+          node scripts/editor/approve.mjs "$EDITOR" $FILES
+
+      - name: Check and build
+        run: |
+          if ! npm run check:content > check.log 2>&1 || ! npm run build >> check.log 2>&1; then
+            { echo "Not published: the site check failed. Fix these and comment /publish again."; echo; echo '```'; grep -E '^(error|warn)|Error' check.log | head -30; echo '```'; } > reply.md
+            gh pr comment "$PR" --body-file reply.md
+            exit 1
+          fi
+
+      - name: Merge and deploy
+        run: |
+          git config user.name "AI-Portal publisher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain content)" ]; then
+            git add content
+            git commit -m "Approved by $EDITOR"
+            git push
+          fi
+          if [ "$(gh pr view "$PR" --json isDraft --jq .isDraft)" = "true" ]; then gh pr ready "$PR"; fi
+          gh pr merge "$PR" --squash --delete-branch
+          # A merge made by this workflow does not start other workflows, so start the deploy here.
+          gh workflow run deploy.yml --ref main
+          gh pr comment "$PR" --body "Published. The site is deploying now."

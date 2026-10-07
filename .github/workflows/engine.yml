@@ -38,6 +38,8 @@ jobs:
         if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
         run: |
           if [ -z "$(git status --porcelain content/articles)" ]; then
             echo "No new drafts today."
@@ -51,8 +53,12 @@ jobs:
           git add content/articles engine/seen.json
           git commit -m "Drafts for $DAY"
           git push -u origin "$BRANCH"
-          if ! gh pr create --base main --head "$BRANCH" --title "Drafts for $DAY" --body-file engine-drafts.md; then
+          FILES=$(git diff --name-only HEAD~1 -- content)
+          if URL=$(gh pr create --base main --head "$BRANCH" --title "Drafts for $DAY" --body-file engine-drafts.md); then
+            node scripts/editor/notify.mjs "$URL" $FILES
+          else
             echo "::warning::Drafts are on branch $BRANCH, but GitHub refused to open the pull request. In the repo, go to Settings > Actions > General > Workflow permissions and tick 'Allow GitHub Actions to create and approve pull requests'."
+            node scripts/editor/notify.mjs "https://github.com/${{ github.repository }}/compare/main...$BRANCH" $FILES
           fi
 
       - uses: actions/upload-artifact@v4
