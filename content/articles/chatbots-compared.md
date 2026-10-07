@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/chatbots-compared.svg
+imageAlt: "A balance scale weighing two speech bubbles, one blue and one purple, held level."
 metaTitle: "Chatbots compared: which AI assistant fits you?"
 metaDescription: "ChatGPT, Claude, Gemini, Copilot, Meta AI, Mistral Vibe and Perplexity compared by task: writing, research, documents, images, voice, privacy and the EU."
 shortAnswer: "There is no single best AI assistant: each is stronger at some jobs. All seven major ones have a free version, and paid plans mostly start at around $20 a month. Pick by task, try two or three on the same question, and check each one's privacy settings before you share anything personal."

@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/your-data-and-ai-chatbots.svg
+imageAlt: "A chat window with two message bubbles, and a yellow padlock hanging from its corner."
 metaTitle: "Your data and AI chatbots: what they keep"
 metaDescription: "What ChatGPT, Claude, Gemini, Copilot and Meta AI keep from your chats, how to stop training on them, and how to delete your history."
 shortAnswer: "Treat a chatbot like an email to a company: what you type is stored, and on personal accounts it may be used to train future AI models unless you switch that off. Each major chatbot has a setting to opt out, a temporary or incognito mode, and a way to delete history. Never paste passwords, ID numbers or other people's private records."

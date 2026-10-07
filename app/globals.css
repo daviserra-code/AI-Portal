@@ -211,6 +211,7 @@ a.note:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; te
   border: var(--rule) solid var(--ink); transition: transform 120ms ease, box-shadow 120ms ease;
 }
 .card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow); }
+.card-art { display: block; width: calc(100% + 40px); height: auto; aspect-ratio: 16 / 9; margin: -20px -20px 4px; border-bottom: var(--rule) solid var(--ink); }
 .card h3 { font-size: 1.5rem; }
 .card p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
 .empty { padding: 24px; border: 2px dashed var(--ink); color: var(--muted); margin: 0; }
@@ -222,6 +223,10 @@ a.note:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; te
 .dek { font-size: 1.25rem; color: var(--muted); margin: 0; }
 .byline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: 0.875rem; color: var(--muted); border-block: 2px solid var(--ink); padding-block: 10px; }
 .byline a { color: var(--ink); font-weight: 700; }
+/* illustrations are drawn on paper in both themes, like a printed plate */
+.illustration { margin: 0; display: grid; gap: 6px; }
+.illustration img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: var(--rule) solid var(--ink); }
+.illustration figcaption { color: var(--muted); }
 .answer { background: var(--sun); color: var(--on-sun); border: var(--rule) solid var(--ink); box-shadow: 6px 6px 0 var(--ink); padding: 18px 20px; display: grid; gap: 8px; }
 .answer .label { color: var(--on-sun); }
 .answer p { margin: 0; font-size: 1.125rem; font-weight: 700; line-height: 1.45; }

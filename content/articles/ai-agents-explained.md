@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/ai-agents-explained.svg
+imageAlt: "A phone with a mouse pointer pressing a button, next to a checklist with two items ticked and one still to do."
 metaTitle: "AI agents explained: what they do and how to stay safe"
 metaDescription: "An AI agent doesn't just answer: it acts, using a browser, your apps and your accounts. What agents can do in 2026, where they fail, and how to stay safe."
 shortAnswer: "An AI agent is an AI system that carries out tasks for you instead of only answering questions: it can browse websites, fill in forms, use your apps, write and run code, and take several steps on its own. Agents from OpenAI, Anthropic, Google and Microsoft are now on sale, but they still make mistakes and can be tricked by malicious web pages, so start with low-stakes tasks and approve anything that spends money or sends messages."

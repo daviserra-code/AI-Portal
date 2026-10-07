@@ -26,11 +26,11 @@ description: "We use AI to help write AI-Portal, and a person checks and approve
 
 ## How we label it
 
-Every article ends with a "How this was made" note, for example: *"Drafted with AI from the sources listed above, then fact-checked and edited by Davide Serra."* Pieces written without AI say so too. AI-generated images are captioned "AI-generated image" and carry machine-readable metadata (IPTC digital source type).
+Every article ends with a "How this was made" note, for example: *"Drafted with AI from the sources listed above, then fact-checked and edited by Davide Serra."* Pieces written without AI say so too. Article illustrations are drawn by AI in our house style. They are captioned "AI-generated illustration" and marked in the page's machine-readable data with the IPTC digital source type for AI-made media. We never use AI to make realistic images of real people or events.
 
 ## Tools we use
 
-[List the models and tools, for example Claude by Anthropic for drafting.] We update this list when it changes.
+We use Claude by Anthropic. A smaller Claude model helps sort which stories are worth explaining, and a larger one drafts the articles and draws the illustrations. We update this list when it changes.
 
 ## Why we disclose
 

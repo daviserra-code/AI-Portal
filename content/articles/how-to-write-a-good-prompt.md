@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/how-to-write-a-good-prompt.svg
+imageAlt: "A large blue speech bubble filled with lines of writing, with a yellow pencil leaning beside it."
 metaTitle: "How to write a good prompt, with 12 real examples"
 metaDescription: "Get better answers from ChatGPT, Claude or Gemini: say what you want and why, add context, name the format, check the answer. 12 before-and-after examples."
 shortAnswer: "Write to a chatbot the way you would brief a clever new colleague: say what you want, why you want it, who it is for and what the answer should look like. Ask it to put questions to you if something is unclear, then check the answer and ask again if it misses."

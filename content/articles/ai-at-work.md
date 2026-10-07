@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/ai-at-work.svg
+imageAlt: "A desk with an open laptop showing coloured blocks, a yellow mug of coffee and two sticky notes on the wall."
 metaTitle: "Will AI take my job? What the evidence shows"
 metaDescription: "AI changes tasks before it changes jobs. What studies from the ILO, IMF, WEF and others show about who is most exposed, and practical steps for workers."
 shortAnswer: "For most people, AI is more likely to change parts of their job than to replace it: the ILO estimates about one in four workers worldwide are in jobs with some exposure to generative AI, and expects transformation more than elimination. So far, studies find no broad rise in unemployment, but there are early signs of fewer openings for young workers in the most exposed office and software roles."

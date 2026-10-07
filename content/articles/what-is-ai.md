@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/what-is-ai.svg
+imageAlt: "Three picture cards stacked on the left, an arrow, and a simple box with dot eyes answering in a yellow speech bubble."
 metaTitle: "What is AI, really? How it works, in plain English"
 metaDescription: "What people mean by AI today, how machine learning and chatbots work, why they get things wrong, and where AGI fits. A calm, plain-English guide."
 shortAnswer: "Today, \"AI\" mostly means software that learns patterns from huge numbers of examples instead of following rules a person wrote. Chatbots like ChatGPT produce text by repeatedly predicting the most likely next word, which is why they can sound fluent and confident while still being wrong. They are useful helpers, not thinking minds."

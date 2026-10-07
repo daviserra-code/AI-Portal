@@ -25,6 +25,9 @@ export type Article = {
   madeWith: "ai-assisted" | "human";
   metaTitle?: string;
   metaDescription?: string;
+  /** Illustration in public/illustrations, always made with AI (see engine/prompts/illustration.md). */
+  image?: string;
+  imageAlt?: string;
   sources: Source[];
   html: string;
 };
