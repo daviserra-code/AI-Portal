@@ -2,7 +2,8 @@
 term: "Prompt"
 definition: "The instruction or question you give an AI tool, usually typed in ordinary language. It tells the system what you want it to do."
 related: [chatbot, large-language-model, context-window]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A prompt is simply what you type into a [chatbot](/glossary/chatbot) or image tool. It can be a short question, such as "What is the capital of Australia?", or a longer request with details about tone, length and audience.

@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "The EU AI Act in plain English"
 metaDescription: "What Europe's AI law bans, which uses count as high-risk, why chatbots must say they are AI, and how to complain if you think the rules were broken."

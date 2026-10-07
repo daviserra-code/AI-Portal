@@ -2,7 +2,8 @@
 term: "AI agent"
 definition: "An AI system that can take actions to complete a task, not just answer questions. It may search the web, use apps or carry out several steps on its own."
 related: [chatbot, large-language-model, alignment]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A regular [chatbot](/glossary/chatbot) replies to you and then waits. An agent is given a goal and works towards it in steps: it plans what to do, uses tools such as a web browser, a calendar or a spreadsheet, checks the result and carries on.

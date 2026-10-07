@@ -2,7 +2,8 @@
 term: "Bias (in AI)"
 definition: "When an AI system gives results that are unfair or skewed, for example working better for some groups of people than others, often because of patterns in its training data."
 related: [training-data, algorithm, machine-learning, ai-act]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 AI systems learn from examples, and examples come from the real world, with all its gaps and unfairness. If a system mostly saw one kind of person, place or situation during training, it tends to do worse on everything else. Choices made by the people who design it can add bias too.

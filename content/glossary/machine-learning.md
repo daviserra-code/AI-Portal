@@ -2,7 +2,8 @@
 term: "Machine learning"
 definition: "A way of building AI in which a computer learns patterns from examples, instead of a programmer writing every rule by hand."
 related: [artificial-intelligence, training-data, neural-network, algorithm]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 In traditional software, a programmer writes exact instructions: if this happens, do that. In machine learning, the programmer gives the computer many examples and a method for learning from them. The computer adjusts itself until it gets good at the task.

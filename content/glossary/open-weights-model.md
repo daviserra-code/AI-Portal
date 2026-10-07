@@ -2,7 +2,8 @@
 term: "Open-weights model"
 definition: "An AI model whose trained numbers, called weights, are published so anyone can download it and run it on their own computer or server."
 related: [model, fine-tuning, large-language-model]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A trained [model](/glossary/model) is essentially a very large set of numbers, known as weights. Some companies keep their weights private and let you use the model only through their website or app. Others publish the weights so people can download the model, run it themselves and adapt it.

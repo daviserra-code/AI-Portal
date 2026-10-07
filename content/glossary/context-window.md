@@ -2,7 +2,8 @@
 term: "Context window"
 definition: "The amount of text an AI model can take into account at one time, including your messages, any documents you share and its own replies."
 related: [token, large-language-model, prompt]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Think of the context window as the model's working desk. Everything on the desk can be used to form an answer: the conversation so far, a pasted report, your instructions. Anything that does not fit on the desk is out of view. The size is measured in [tokens](/glossary/token).

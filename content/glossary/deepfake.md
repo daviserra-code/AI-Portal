@@ -2,7 +2,8 @@
 term: "Deepfake"
 definition: "A fake video, image or audio recording made with AI to show a real person saying or doing something they never said or did."
 related: [generative-ai, multimodal]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Deepfakes use [generative AI](/glossary/generative-ai) to copy someone's face or voice. With enough photos or recordings of a person, a tool can produce new material that looks or sounds convincingly like them.

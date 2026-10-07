@@ -2,7 +2,8 @@
 term: "Neural network"
 definition: "A type of machine learning system made of many simple connected units that pass numbers to each other. It is loosely inspired by how brain cells connect."
 related: [machine-learning, model, large-language-model]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Picture a large web of tiny calculators arranged in layers. Each one takes in a few numbers, does a simple sum and passes the result on. The strength of each connection can be adjusted. During training, the network nudges millions or billions of these strengths until its outputs match the examples it was shown.

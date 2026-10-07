@@ -2,7 +2,8 @@
 term: "AI Act (EU)"
 definition: "The European Union's law on artificial intelligence. It sets rules for AI systems based on how much risk they pose to people's safety and rights."
 related: [artificial-intelligence, deepfake, bias]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 The AI Act is a European Union regulation, so it applies across all EU countries, including Slovenia. Its main idea is that stricter rules apply where the stakes are higher. A small number of uses are banned outright. AI used in sensitive areas, such as hiring, education or access to public services, faces strict requirements. Lower-risk tools mostly have to be open about being AI.

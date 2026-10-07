@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "Will AI take my job? What the evidence shows"
 metaDescription: "AI changes tasks before it changes jobs. What studies from the ILO, IMF, WEF and others show about who is most exposed, and practical steps for workers."

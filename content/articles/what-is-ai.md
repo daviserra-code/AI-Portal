@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "What is AI, really? How it works, in plain English"
 metaDescription: "What people mean by AI today, how machine learning and chatbots work, why they get things wrong, and where AGI fits. A calm, plain-English guide."

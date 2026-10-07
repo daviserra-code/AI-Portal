@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Guide
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "Is this real? How to spot AI-generated content"
 metaDescription: "Visual tells are fading as AI improves. Here are the habits that still work for images, video, voices and text, plus what labels and the EU AI Act do."

@@ -2,7 +2,8 @@
 term: "Training data"
 definition: "The examples an AI system learns from, such as text, images, recordings or records. What is in the data shapes what the system can do and the mistakes it makes."
 related: [machine-learning, model, bias, fine-tuning]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 An AI system learns much like a student working through practice exercises. The training data is that pile of exercises. For a [large language model](/glossary/large-language-model) it is mostly text gathered from books, websites and other sources. For a photo tool it might be millions of labelled pictures.

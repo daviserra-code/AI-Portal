@@ -2,7 +2,8 @@
 term: "Hallucination"
 definition: "When an AI tool states something false or made up as if it were true, such as a fake quote, a wrong date or a book that does not exist."
 related: [large-language-model, chatbot, training-data]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A [large language model](/glossary/large-language-model) writes by predicting likely words, not by looking facts up in a reliable database. Most of the time this produces sensible answers. Sometimes it produces text that sounds right but is not, and it does so in the same confident tone.

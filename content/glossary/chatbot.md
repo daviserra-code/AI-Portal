@@ -2,7 +2,8 @@
 term: "Chatbot"
 definition: "A program you talk to by typing or speaking, which answers in ordinary language. Many modern chatbots run on a large language model."
 related: [large-language-model, prompt, ai-agent]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A chatbot is any computer program built for conversation. Older chatbots followed fixed scripts: they recognised certain keywords and picked a prepared answer. Newer ones, such as the AI assistants many people now use, are powered by a [large language model](/glossary/large-language-model) and can respond to almost anything you type.

@@ -2,7 +2,8 @@
 term: "Multimodal"
 definition: "Describes an AI system that can work with more than one kind of input or output, such as text, images, sound and video."
 related: [large-language-model, generative-ai, model]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Early chatbots worked only with text. A multimodal system can handle several "modes" of information. You might show it a photo and ask a question about it, speak to it and hear it answer, or ask it to turn a written description into a picture.

@@ -2,7 +2,8 @@
 term: "Token"
 definition: "A small chunk of text, often a short word or part of a word, that a language model reads and writes. Usage limits and prices are often counted in tokens."
 related: [large-language-model, context-window, prompt]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A [large language model](/glossary/large-language-model) does not read whole sentences the way you do. It first breaks text into pieces called tokens. A common short word like "cat" may be one token, while a longer or rarer word such as "unbelievable" may be split into several. Spaces and punctuation count too.

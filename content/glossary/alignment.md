@@ -2,7 +2,8 @@
 term: "Alignment"
 definition: "The work of making sure AI systems do what people actually intend and act in line with human values, rather than causing harm or pursuing the wrong goal."
 related: [ai-agent, agi, superintelligence, bias]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Telling a computer exactly what you want is harder than it sounds. A system can follow the letter of an instruction while missing its spirit. Alignment research tries to close that gap, so AI tools are helpful, honest and avoid causing harm.

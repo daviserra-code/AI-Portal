@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "AI agents explained: what they do and how to stay safe"
 metaDescription: "An AI agent doesn't just answer: it acts, using a browser, your apps and your accounts. What agents can do in 2026, where they fail, and how to stay safe."

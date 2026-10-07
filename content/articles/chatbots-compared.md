@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "Chatbots compared: which AI assistant fits you?"
 metaDescription: "ChatGPT, Claude, Gemini, Copilot, Meta AI, Mistral Vibe and Perplexity compared by task: writing, research, documents, images, voice, privacy and the EU."

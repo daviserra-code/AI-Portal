@@ -2,7 +2,8 @@
 term: "Large language model (LLM)"
 definition: "An AI model trained on huge amounts of text so it can read and write language. It works by predicting which words are likely to come next."
 related: [model, chatbot, token, training-data]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A large language model is the engine behind most of today's AI chat tools. During [training](/glossary/training-data) it reads an enormous amount of text, from books and websites to code, and learns how words tend to follow one another. "Large" refers both to that amount of text and to the size of the model itself, which has billions of adjustable settings.

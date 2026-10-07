@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "How to write a good prompt, with 12 real examples"
 metaDescription: "Get better answers from ChatGPT, Claude or Gemini: say what you want and why, add context, name the format, check the answer. 12 before-and-after examples."

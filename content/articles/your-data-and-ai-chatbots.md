@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Guide
 author: davide-serra
 datePublished: "2026-10-07"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: "Your data and AI chatbots: what they keep"
 metaDescription: "What ChatGPT, Claude, Gemini, Copilot and Meta AI keep from your chats, how to stop training on them, and how to delete your history."

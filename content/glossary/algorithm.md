@@ -2,7 +2,8 @@
 term: "Algorithm"
 definition: "A set of step-by-step instructions for solving a problem or completing a task. Computers follow algorithms to do almost everything they do."
 related: [machine-learning, model, bias]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 A recipe is a good everyday comparison: a fixed list of steps that, followed in order, gets you from ingredients to a finished dish. A computer algorithm is the same idea written for a machine, such as the steps for sorting a list of names alphabetically or finding the shortest route on a map.

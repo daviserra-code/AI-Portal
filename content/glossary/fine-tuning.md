@@ -2,7 +2,8 @@
 term: "Fine-tuning"
 definition: "Extra training that takes an existing AI model and adapts it to a particular job, style or subject using a smaller set of examples."
 related: [model, training-data, open-weights-model]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Training a big [model](/glossary/model) from scratch takes huge amounts of data, time and computing power. Fine-tuning is a shortcut. You start with a model that already has general skills and give it further practice on a narrower set of examples, so it becomes better at one kind of task.

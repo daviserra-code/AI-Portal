@@ -2,7 +2,8 @@
 term: "Model (AI model)"
 definition: "The trained part of an AI system that turns an input, such as a question or a photo, into an output, such as an answer or a label."
 related: [large-language-model, training-data, open-weights-model, fine-tuning]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 When people talk about an AI "model", they mean the thing that has been trained. Think of it as the result of all the learning: a large file of numbers that captures the patterns found in the [training data](/glossary/training-data). Give it something new and it applies those patterns to produce a response.

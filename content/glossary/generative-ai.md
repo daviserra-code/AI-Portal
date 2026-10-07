@@ -2,7 +2,8 @@
 term: "Generative AI"
 definition: "AI that creates new content, such as text, images, music, video or computer code, based on patterns it learned from existing examples."
 related: [large-language-model, deepfake, multimodal, training-data]
-status: draft
+status: approved
+approvedBy: davide-serra
 ---
 
 Most earlier AI was built to sort or predict: is this email spam, will this customer cancel? Generative AI produces something new instead. You describe what you want and it writes, draws or composes a fresh result.
