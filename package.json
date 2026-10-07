@@ -9,7 +9,8 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "check:content": "node scripts/check-content.mjs",
-    "check": "npm run typecheck && npm run check:content"
+    "check": "npm run typecheck && npm run check:content",
+    "engine:dry-run": "node scripts/engine/dry-run.mjs"
   },
   "engines": {
     "node": ">=20"
