@@ -36,23 +36,28 @@ jobs:
       - uses: actions/checkout@v4
         if: steps.secrets.outputs.ready == 'true'
 
+      - name: Set up SSH
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER || vars.HETZNER_USER }}
+          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
+          KEY: ${{ secrets.HETZNER_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          # Keys pasted on Windows often carry CR line endings, which ssh rejects.
+          printf '%s\n' "$KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null || { echo "::error::HETZNER_SSH_KEY is not a valid private key without a passphrase"; exit 1; }
+          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o BatchMode=yes -o ConnectTimeout=15 "$USER@$HOST" true \
+            || { echo "::error::SSH login to $USER@$HOST:$PORT was refused. Check that ai-portal-deploy.pub is in that user's ~/.ssh/authorized_keys."; exit 1; }
+
       - name: Build image
         if: steps.secrets.outputs.ready == 'true'
         run: |
           docker build -t "ai-portal:${GITHUB_SHA::12}" .
           docker save "ai-portal:${GITHUB_SHA::12}" | gzip > image.tar.gz
-
-      - name: Set up SSH
-        if: steps.secrets.outputs.ready == 'true'
-        env:
-          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
-          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
-          KEY: ${{ secrets.HETZNER_SSH_KEY }}
-        run: |
-          install -m 700 -d ~/.ssh
-          printf '%s\n' "$KEY" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
       - name: Ship and restart
         if: steps.secrets.outputs.ready == 'true'
