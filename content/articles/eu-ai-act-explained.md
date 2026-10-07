@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/eu-ai-act-explained.svg
+imageAlt: "A page of rules with a yellow seal, next to a pink shield marked with a tick."
 metaTitle: "The EU AI Act in plain English"
 metaDescription: "What Europe's AI law bans, which uses count as high-risk, why chatbots must say they are AI, and how to complain if you think the rules were broken."
 shortAnswer: "The EU AI Act sorts AI by how much harm it could do. A few uses, such as social scoring, are banned outright; risky uses such as CV screening or credit scoring face strict rules from December 2027; and chatbots and deepfakes must be disclosed. Anyone can complain to a national authority if they think the law has been broken."

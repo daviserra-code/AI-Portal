@@ -50,6 +50,14 @@ export default async function ArticlePage({ params }: Props) {
         description: a.dek,
         url,
         mainEntityOfPage: url,
+        image: a.image
+          ? {
+              "@type": "ImageObject",
+              url: `${site.url}${a.image}`,
+              caption: a.imageAlt,
+              digitalSourceType: "https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+            }
+          : undefined,
         inLanguage: site.language,
         datePublished: a.datePublished,
         dateModified: a.dateModified ?? a.datePublished,
@@ -93,6 +101,12 @@ export default async function ArticlePage({ params }: Props) {
         )}
         <span>{readMinutes(a.html)} min read</span>
       </div>
+      {a.image && (
+        <figure className="illustration">
+          <img src={a.image} alt={a.imageAlt ?? ""} width={1200} height={675} />
+          <figcaption className="label">AI-generated illustration</figcaption>
+        </figure>
+      )}
       <div className="answer">
         <span className="label">Short answer</span>
         <p>{a.shortAnswer}</p>

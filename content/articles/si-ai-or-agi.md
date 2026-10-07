@@ -7,6 +7,8 @@ author: davide-serra
 datePublished: "2026-10-07"
 status: draft
 madeWith: ai-assisted
+image: /illustrations/si-ai-or-agi.svg
+imageAlt: "Three purple steps of rising height, a small figure on the lowest one and a cloud above the highest."
 metaTitle: "SI, AI or AGI? What the new US term means"
 metaDescription: "The US government now says \"super intelligence\" instead of AI. Here's what the new term covers, what it doesn't, and why it matters to you."
 shortAnswer: "\"SI\" is a new name the US federal government has used for AI since 29 September 2026. Legally, it covers the same systems the law already calls artificial intelligence. It does not mean that machines have become smarter than people."

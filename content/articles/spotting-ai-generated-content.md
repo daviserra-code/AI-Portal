@@ -8,6 +8,8 @@ datePublished: "2026-10-07"
 status: approved
 approvedBy: davide-serra
 madeWith: ai-assisted
+image: /illustrations/spotting-ai-generated-content.svg
+imageAlt: "A framed picture of hills and a sun, with a magnifying glass revealing that part of it is made of square pixels."
 metaTitle: "Is this real? How to spot AI-generated content"
 metaDescription: "Visual tells are fading as AI improves. Here are the habits that still work for images, video, voices and text, plus what labels and the EU AI Act do."
 shortAnswer: "You often can't tell AI-made content by looking at it, so check where it came from instead: find the original upload, run a reverse image search and see whether reputable outlets report it. Labels and content credentials help when present, but their absence proves nothing. AI-text detectors are unreliable and should not be used to accuse anyone."

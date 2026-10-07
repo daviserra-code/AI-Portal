@@ -4,6 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { svgProblems } from "./lib/svg.mjs";
 
 const root = path.join(process.cwd(), "content");
 const pillars = ["understand", "use", "live-with-it", "whats-new", "super-intelligence"];
@@ -39,6 +40,14 @@ for (const { file, data, content } of read("articles")) {
   const text = `${data.title ?? ""}\n${data.dek ?? ""}\n${data.shortAnswer ?? ""}\n${content}`.toLowerCase();
   for (const phrase of banned) if (text.includes(phrase)) errors.push(`${file}: banned phrase "${phrase}"`);
   if (bannedOpeners.test(content)) errors.push(`${file}: paragraph opens with "Moreover," or "Furthermore,"`);
+
+  if (data.image) {
+    const img = path.join(process.cwd(), "public", String(data.image));
+    if (!/^\/illustrations\/[a-z0-9-]+\.svg$/.test(data.image)) errors.push(`${file}: image must be /illustrations/<name>.svg`);
+    else if (!fs.existsSync(img)) errors.push(`${file}: image ${data.image} not found in public/`);
+    else for (const p of svgProblems(fs.readFileSync(img, "utf8"))) errors.push(`${file}: illustration ${p}`);
+    if (!data.imageAlt) errors.push(`${file}: image needs "imageAlt"`);
+  }
 
   if (data.status === "approved") {
     if (!data.approvedBy) errors.push(`${file}: approved articles need "approvedBy" (the editor's name)`);

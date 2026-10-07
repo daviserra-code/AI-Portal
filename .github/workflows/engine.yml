@@ -6,7 +6,7 @@ on:
     - cron: "0 4 * * *" # 06:00 in Italy (summer time)
   workflow_dispatch:
   pull_request:
-    paths: ["engine/**", "scripts/engine/**", ".github/workflows/engine.yml"]
+    paths: ["engine/**", "scripts/engine/**", "scripts/lib/**", ".github/workflows/engine.yml"]
 
 concurrency:
   group: content-engine
@@ -34,6 +34,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/engine/draft.mjs ${{ github.event_name == 'pull_request' && '--picks 1 --test' || '--picks 2' }} --out engine-drafts.md
 
+      - name: Illustrate the new drafts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/engine/illustrate.mjs $(git ls-files --others --exclude-standard content/articles)
+
       - name: Open the drafts pull request
         if: github.event_name != 'pull_request'
         env:
@@ -50,7 +55,7 @@ jobs:
           git config user.name "AI-Portal content engine"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add content/articles engine/seen.json
+          git add content/articles public/illustrations engine/seen.json
           git commit -m "Drafts for $DAY"
           git push -u origin "$BRANCH"
           FILES=$(git diff --name-only HEAD~1 -- content)
