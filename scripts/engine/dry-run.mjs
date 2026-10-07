@@ -101,4 +101,8 @@ if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_S
 const broken = health.filter((h) => h.parsed === 0);
 for (const b of broken) console.log(`::warning::Feed "${b.name}" has no items (HTTP ${b.status})`);
 for (const h of health.filter((h) => h.alt)) console.log(`::notice::Feed "${h.name}" works only on its fallback ${h.alt}`);
+// Picks as annotations too, so they show on the run page without opening the report.
+console.log(`::notice::${picked.length} pick(s) from ${stories.length} stories (${eligible.length} with 2+ independent outlets)`);
+for (const s of picked) console.log(`::notice::Pick: ${s.headline} (${s.items.map((i) => i.source).join(", ")})`);
+for (const s of roundup) console.log(`::notice::Roundup candidate: ${s.headline} (${s.items.map((i) => i.source).join(", ")})`);
 console.log(`Wrote ${out}: ${picked.length} picks, ${stories.length} stories, ${broken.length} feed problem(s).`);
