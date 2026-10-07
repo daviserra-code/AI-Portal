@@ -1,43 +1,37 @@
 {
-  "_note": "Sources the content engine reads. tier: 5 = official or primary research, 4 = established newsroom or expert. official: true means the source announces its own news and never counts as the independent second source for it. general: true means a newsroom that covers more than AI, so items must mention AI to be kept.",
+  "_note": "Sources the content engine reads. tier: 5 = official or primary research, 4 = established newsroom or expert. official: true means the source announces its own news and never counts as the independent second source for it. general: true means a newsroom that covers more than AI, so items must mention AI to be kept. alt: fallback URLs tried in order when the main one fails or has no items.",
   "feeds": [
     { "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "section": "whats-new", "tier": 5, "official": true },
     { "name": "Anthropic", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml", "section": "whats-new", "tier": 5, "official": true },
     { "name": "Google AI", "url": "https://blog.google/technology/ai/rss/", "section": "whats-new", "tier": 5, "official": true },
     { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "section": "whats-new", "tier": 5, "official": true },
-    { "name": "Microsoft AI", "url": "https://blogs.microsoft.com/ai/feed/", "section": "whats-new", "tier": 5, "official": true },
+    { "name": "Microsoft AI", "url": "https://blogs.microsoft.com/ai/feed/", "section": "whats-new", "tier": 5, "official": true, "alt": [ "https://news.microsoft.com/source/topics/ai/feed/" ] },
     { "name": "Apple Machine Learning", "url": "https://machinelearning.apple.com/rss.xml", "section": "whats-new", "tier": 5, "official": true },
     { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "section": "whats-new", "tier": 5, "official": true },
-
     { "name": "BBC Technology", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml", "section": "whats-new", "tier": 4, "general": true },
     { "name": "The Guardian AI", "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss", "section": "whats-new", "tier": 4 },
-    { "name": "AP Artificial Intelligence", "url": "https://apnews.com/hub/artificial-intelligence.rss", "section": "whats-new", "tier": 4 },
+    { "name": "NPR Technology", "url": "https://feeds.npr.org/1019/rss.xml", "section": "whats-new", "tier": 4, "general": true },
     { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "section": "whats-new", "tier": 4 },
-    { "name": "The Verge AI", "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml", "section": "whats-new", "tier": 4 },
-
+    { "name": "The Verge AI", "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml", "section": "whats-new", "tier": 4, "alt": [ "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" ] },
     { "name": "MIT Technology Review AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "section": "understand", "tier": 4 },
     { "name": "IEEE Spectrum AI", "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss", "section": "understand", "tier": 5 },
     { "name": "The Conversation AI", "url": "https://theconversation.com/topics/artificial-intelligence-ai-90/articles.atom", "section": "understand", "tier": 4 },
-    { "name": "Stanford HAI", "url": "https://hai.stanford.edu/news/rss.xml", "section": "understand", "tier": 5 },
+    { "name": "Stanford HAI", "url": "https://hai.stanford.edu/news/rss.xml", "section": "understand", "tier": 5, "alt": [ "https://hai.stanford.edu/news/feed" ] },
     { "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "section": "understand", "tier": 5, "general": true },
-
     { "name": "One Useful Thing", "url": "https://www.oneusefulthing.org/feed", "section": "use", "tier": 4 },
-    { "name": "Simon Willison", "url": "https://simonwillison.net/atom/tags/ai/", "section": "use", "tier": 4 },
+    { "name": "Simon Willison", "url": "https://simonwillison.net/atom/tags/ai/", "section": "use", "tier": 4, "alt": [ "https://simonwillison.net/tags/ai.atom", "https://simonwillison.net/atom/everything/" ] },
     { "name": "Wired AI", "url": "https://www.wired.com/feed/tag/ai/latest/rss", "section": "use", "tier": 4 },
-
     { "name": "Rest of World", "url": "https://restofworld.org/feed/latest", "section": "live-with-it", "tier": 4, "general": true },
-    { "name": "The Markup", "url": "https://themarkup.org/rss.xml", "section": "live-with-it", "tier": 4, "general": true },
+    { "name": "The Markup", "url": "https://themarkup.org/rss.xml", "section": "live-with-it", "tier": 4, "general": true, "alt": [ "https://themarkup.org/feeds/rss.xml" ] },
     { "name": "EFF Deeplinks", "url": "https://www.eff.org/rss/updates.xml", "section": "live-with-it", "tier": 4, "general": true },
     { "name": "Pew Research", "url": "https://www.pewresearch.org/feed/", "section": "live-with-it", "tier": 5, "general": true },
-    { "name": "Ada Lovelace Institute", "url": "https://www.adalovelaceinstitute.org/feed/", "section": "live-with-it", "tier": 4 },
+    { "name": "Ada Lovelace Institute", "url": "https://www.adalovelaceinstitute.org/feed/", "section": "live-with-it", "tier": 4, "alt": [ "https://www.adalovelaceinstitute.org/feed/rss/" ] },
     { "name": "AI Snake Oil", "url": "https://www.aisnakeoil.com/feed", "section": "live-with-it", "tier": 4 },
-
     { "name": "EU Digital Strategy", "url": "https://digital-strategy.ec.europa.eu/en/rss.xml", "section": "super-intelligence", "tier": 5, "official": true, "general": true },
-    { "name": "OECD.AI", "url": "https://oecd.ai/en/feed", "section": "super-intelligence", "tier": 5 },
     { "name": "UK AI Security Institute", "url": "https://www.aisi.gov.uk/rss.xml", "section": "super-intelligence", "tier": 5, "official": true },
     { "name": "NIST", "url": "https://www.nist.gov/news-events/news/rss.xml", "section": "super-intelligence", "tier": 5, "official": true, "general": true },
-    { "name": "Epoch AI", "url": "https://epoch.ai/blog/rss.xml", "section": "super-intelligence", "tier": 5 },
-    { "name": "Import AI", "url": "https://importai.substack.com/feed", "section": "super-intelligence", "tier": 4 },
+    { "name": "Epoch AI", "url": "https://epoch.ai/blog/rss.xml", "section": "super-intelligence", "tier": 5, "alt": [ "https://epochai.substack.com/feed", "https://epoch.ai/feed.xml" ] },
+    { "name": "Import AI", "url": "https://importai.substack.com/feed", "section": "super-intelligence", "tier": 4, "alt": [ "https://jack-clark.net/feed/" ] },
     { "name": "CAIS AI Safety Newsletter", "url": "https://newsletter.safe.ai/feed", "section": "super-intelligence", "tier": 4 },
     { "name": "Alignment Forum", "url": "https://www.alignmentforum.org/feed.xml", "section": "super-intelligence", "tier": 4 }
   ]

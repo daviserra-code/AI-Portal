@@ -19,13 +19,9 @@ const { feeds } = JSON.parse(fs.readFileSync(path.join(root, "engine/feeds.json"
 const seen = new Set(JSON.parse(fs.readFileSync(path.join(root, "engine/seen.json"), "utf8")).links);
 const since = Date.now() - hours * 3600e3;
 
-async function load(feed) {
-  if (fixtures) {
-    const file = path.join(fixtures, `${feed.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}.xml`);
-    return fs.existsSync(file) ? { status: "fixture", xml: fs.readFileSync(file, "utf8") } : { status: "no fixture", xml: "" };
-  }
+async function get(url) {
   try {
-    const res = await fetch(feed.url, {
+    const res = await fetch(url, {
       headers: { "user-agent": "AI-Portal feed reader (+https://ai-portal.si/editorial-policy)" },
       signal: AbortSignal.timeout(20000),
       redirect: "follow",
@@ -36,10 +32,25 @@ async function load(feed) {
   }
 }
 
+// Tries the main URL, then each `alt` URL, and reports which one worked.
+async function load(feed) {
+  if (fixtures) {
+    const file = path.join(fixtures, `${feed.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}.xml`);
+    return fs.existsSync(file) ? { status: "fixture", xml: fs.readFileSync(file, "utf8"), url: file } : { status: "no fixture", xml: "", url: file };
+  }
+  const tried = [];
+  for (const url of [feed.url, ...(feed.alt ?? [])]) {
+    const r = await get(url);
+    tried.push(r.status);
+    if (parseFeed(r.xml).length) return { ...r, url, status: tried.join(" → ") };
+  }
+  return { status: tried.join(" → "), xml: "", url: feed.url };
+}
+
 const health = [];
 const items = [];
 await Promise.all(feeds.map(async (feed) => {
-  const { status, xml } = await load(feed);
+  const { status, xml, url } = await load(feed);
   const parsed = parseFeed(xml);
   let kept = 0;
   for (const it of parsed) {
@@ -51,7 +62,7 @@ await Promise.all(feeds.map(async (feed) => {
     items.push({ ...it, source: feed.name, tier: feed.tier, section: feed.section, official: !!feed.official, words: words(it.title), names: names(it.title) });
     kept++;
   }
-  health.push({ name: feed.name, status, parsed: parsed.length, kept });
+  health.push({ name: feed.name, status, parsed: parsed.length, kept, alt: url !== feed.url && !fixtures ? url : "" });
 }));
 
 const stories = cluster(items).map(rank).sort((a, b) => b.score - a.score);
@@ -78,15 +89,16 @@ ${roundup.map(line).join("\n") || "None."}
 
 ## Feed health
 
-| Feed | HTTP | Items in feed | Kept |
-| --- | --- | --- | --- |
-${health.sort((a, b) => a.name.localeCompare(b.name)).map((h) => `| ${h.name} | ${h.status} | ${h.parsed} | ${h.kept} |`).join("\n")}
+| Feed | HTTP | Items in feed | Kept | Working fallback URL |
+| --- | --- | --- | --- | --- |
+${health.sort((a, b) => a.name.localeCompare(b.name)).map((h) => `| ${h.name} | ${h.status} | ${h.parsed} | ${h.kept} | ${h.alt} |`).join("\n")}
 
 Nothing was written to the site. Step 2 adds the reader-impact check and the drafts.
 `;
 
 fs.writeFileSync(out, report);
 if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
-const broken = health.filter((h) => !["200", "fixture"].includes(h.status) || h.parsed === 0);
-for (const b of broken) console.log(`::warning::Feed "${b.name}" returned ${b.status} with ${b.parsed} items`);
+const broken = health.filter((h) => h.parsed === 0);
+for (const b of broken) console.log(`::warning::Feed "${b.name}" has no items (HTTP ${b.status})`);
+for (const h of health.filter((h) => h.alt)) console.log(`::notice::Feed "${h.name}" works only on its fallback ${h.alt}`);
 console.log(`Wrote ${out}: ${picked.length} picks, ${stories.length} stories, ${broken.length} feed problem(s).`);
