@@ -26,7 +26,7 @@ description: "We use AI to help write AI-Portal, and a person checks and approve
 
 ## How we label it
 
-Every article ends with a "How this was made" note, for example: *"Drafted with AI from the sources listed above, then fact-checked and edited by [Editor name]."* Pieces written without AI say so too. AI-generated images are captioned "AI-generated image" and carry machine-readable metadata (IPTC digital source type).
+Every article ends with a "How this was made" note, for example: *"Drafted with AI from the sources listed above, then fact-checked and edited by Davide Serra."* Pieces written without AI say so too. AI-generated images are captioned "AI-generated image" and carry machine-readable metadata (IPTC digital source type).
 
 ## Tools we use
 
@@ -36,4 +36,4 @@ Every article ends with a "How this was made" note, for example: *"Drafted with 
 
 You should know how what you read was made. Our process follows Google's guidance that AI-assisted content must be reviewed for accuracy, and the EU AI Act, under which AI-generated text on public-interest topics is either labelled or published under human editorial review and responsibility. We do both.
 
-Questions or concerns: [editorial email].
+Questions or concerns: [info@ai-portal.si](mailto:info@ai-portal.si).

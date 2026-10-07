@@ -3,7 +3,7 @@ title: "SI, AI or AGI? What the new US term actually means"
 dek: "The White House now says \"super intelligence\" where it used to say \"artificial intelligence\". The technology hasn't changed overnight. The words have, and that can be confusing."
 pillar: super-intelligence
 format: Explainer
-author: editor
+author: davide-serra
 datePublished: "2026-10-07"
 status: draft
 madeWith: ai-assisted
