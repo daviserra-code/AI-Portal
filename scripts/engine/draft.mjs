@@ -156,10 +156,11 @@ function write(pick, { draft: d, sources }) {
   const slugBase = d.slug.toLowerCase().replace(/[^a-z0-9-]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 70) || "draft";
   let slug = slugBase;
   for (let n = 2; fs.existsSync(path.join(root, "content/articles", `${slug}.md`)); n++) slug = `${slugBase}-${n}`;
-  const notes = [
-    `Drafted by the content engine on ${romeDate()} from ${sources.length} sources. Triage: ${pick.reason} Check every fact against the sources, then delete all EDITOR notes before approving.`,
-    ...d.editorNotes,
-  ].map((n) => `[EDITOR: ${n.replace(/\]/g, ")")}]`).join("\n\n");
+  // Checks for the editor go to the pull request and the Telegram message, never into the text,
+  // so a good draft can be published with a single /publish. Stray inline notes are moved out too.
+  const inline = [];
+  const body = d.body.replace(/^#\s.*\n+/, "").replace(/\s*\[EDITOR:\s*([^\]]*)\]/g, (_, n) => (inline.push(n.trim()), "")).trim();
+  const checks = [...d.editorNotes, ...inline].map((n) => n.trim()).filter(Boolean);
   const data = {
     title: d.title,
     dek: d.dek,
@@ -175,8 +176,8 @@ function write(pick, { draft: d, sources }) {
     sources: used.length ? used : sources.filter((s) => !s.official).map((s) => ({ title: `${s.source}: ${s.title}`, url: s.link })),
   };
   const file = path.join(root, "content/articles", `${slug}.md`);
-  fs.writeFileSync(file, matter.stringify(`${notes}\n\n${d.body.replace(/^#\s.*\n+/, "").trim()}\n`, data));
-  return { file, slug, data };
+  fs.writeFileSync(file, matter.stringify(`${body}\n`, data));
+  return { file, slug, data, checks };
 }
 
 // The same gate CI runs. Returns this file's errors, if any.
@@ -225,6 +226,9 @@ if (candidates.length) {
   }
 }
 
+// The editor's checks, for the Telegram message (scripts/editor/notify.mjs).
+fs.writeFileSync(path.join(root, "engine-checks.json"), JSON.stringify(Object.fromEntries(results.filter((r) => r.file).map((r) => [path.relative(root, r.file), r.checks]))));
+
 // Drafted stories never come back; the editor rejects one by deleting its file.
 const drafted = results.filter((r) => r.file);
 if (drafted.length) {
@@ -239,7 +243,7 @@ const triageRows = scored.map((t) =>
 summary(`# Drafts for ${romeDate()}
 
 ${drafted.length
-  ? `${drafted.length} draft${drafted.length > 1 ? "s" : ""} for the editor. Nothing is published until you comment /publish on this pull request.`
+  ? `${drafted.length} draft${drafted.length > 1 ? "s" : ""} for the editor. Nothing is published until you comment /publish on this pull request. To drop a story, delete its file first.`
   : "No drafts today. Nothing met the bar, which is fine."}
 
 ${drafted.map((r) => `## ${r.data.title}
@@ -248,10 +252,7 @@ ${drafted.map((r) => `## ${r.data.title}
 
 > ${r.data.shortAnswer}
 
-- [ ] Every fact matches a listed source
-- [ ] Every \`[EDITOR: ...]\` note is resolved and deleted
-- [ ] Reads like us: plain, calm, useful to a non-expert
-- [ ] Keep it, or delete the file to reject the story
+${r.checks.length ? `Worth checking:\n${r.checks.map((c) => `- ${c}`).join("\n")}` : "Nothing flagged to check."}
 `).join("\n")}
 ${results.filter((r) => r.error).map((r) => `- Could not draft "${r.pick.story.headline}": ${r.error}`).join("\n")}
 
