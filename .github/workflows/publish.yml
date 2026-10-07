@@ -67,7 +67,17 @@ jobs:
             git push
           fi
           if [ "$(gh pr view "$PR" --json isDraft --jq .isDraft)" = "true" ]; then gh pr ready "$PR"; fi
-          gh pr merge "$PR" --squash --delete-branch
+          # Right after the push GitHub may still be computing whether the PR can merge, so retry.
+          for i in 1 2 3 4 5 6; do
+            if gh pr merge "$PR" --squash > merge.log 2>&1; then MERGED=1; break; fi
+            sleep 10
+          done
+          if [ -z "$MERGED" ]; then
+            { echo "Approved, but GitHub would not merge it yet:"; echo; echo '```'; cat merge.log; echo '```'; echo; echo "Comment /publish again, or press Merge."; } > reply.md
+            gh pr comment "$PR" --body-file reply.md
+            exit 1
+          fi
+          gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/$(gh pr view "$PR" --json headRefName --jq .headRefName)" || true
           # A merge made by this workflow does not start other workflows, so start the deploy here.
           gh workflow run deploy.yml --ref main
           gh pr comment "$PR" --body "Published. The site is deploying now."
