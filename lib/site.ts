@@ -6,7 +6,7 @@ export const site = {
     "Plain-English explainers, guides and news about artificial intelligence and super intelligence, written with AI and checked by a named human editor.",
   language: "en",
   editorialEmail: "info@ai-portal.si",
-  owner: "[legal owner name and country]",
+  owner: "Davide Serra (Italy)",
 };
 
 export const pillars = [

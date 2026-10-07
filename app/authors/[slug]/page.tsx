@@ -15,7 +15,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = getAuthor((await params).slug);
   if (!a) return {};
-  return { title: a.name, description: a.bio, alternates: { canonical: `/authors/${a.slug}` } };
+  return { title: a.name, description: a.bio || `${a.name}, ${a.role.toLowerCase()} of ${site.name}.`, alternates: { canonical: `/authors/${a.slug}` } };
 }
 
 export default async function AuthorPage({ params }: Props) {
@@ -27,7 +27,7 @@ export default async function AuthorPage({ params }: Props) {
     "@type": "Person",
     name: a.name,
     jobTitle: a.role,
-    description: a.bio,
+    description: a.bio || undefined,
     url: `${site.url}/authors/${a.slug}`,
     sameAs: a.sameAs,
     worksFor: { "@id": `${site.url}/#org` },
@@ -37,7 +37,7 @@ export default async function AuthorPage({ params }: Props) {
       <header className="page-head">
         <span className="label">{a.role}</span>
         <h1>{a.name}</h1>
-        <p>{a.bio}</p>
+        {a.bio && <p>{a.bio}</p>}
       </header>
       <div className="prose article" dangerouslySetInnerHTML={{ __html: a.html }} />
       {articles.length > 0 && (
