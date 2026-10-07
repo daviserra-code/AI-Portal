@@ -16,3 +16,9 @@ jobs:
       - run: npm run typecheck
       - run: npm run check:content
       - run: npm run build
+  image:
+    # Proves the production Docker image builds before anything is deployed.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t ai-portal:ci .
