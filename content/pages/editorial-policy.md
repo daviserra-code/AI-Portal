@@ -7,7 +7,7 @@ AI-Portal explains artificial intelligence for people who are not specialists. W
 
 ## Who we are
 
-AI-Portal is an independent publication owned by Davide Serra, based in Italy. He is also our editor ([author page](/authors/davide-serra)) and approves every article before it goes live. Contact: [info@ai-portal.si](mailto:info@ai-portal.si).
+AI-Portal is an independent publication owned by Davide Serra, based in Italy. [Davide Serra](/authors/davide-serra) is also our editor and approves every article before it goes live. Contact: [info@ai-portal.si](mailto:info@ai-portal.si).
 
 ## What we cover
 
