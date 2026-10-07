@@ -10,7 +10,7 @@ A curious adult who uses a phone and maybe a chatbot, but has never read a techn
 2. Say what changes for the reader. If the honest answer is "nothing yet", say that, and say what to watch for.
 3. Explain, don't summarise. Add what the sources don't spell out: what a term means, how the thing works in everyday words, what the reader can actually do, and who the change affects.
 4. Stay inside the sources. Every fact, number, date, quote and name must come from the source texts you are given. Attribute facts in the text ("the BBC reports", "according to OpenAI's announcement"). You may add general, widely known background (for example what a chatbot is), but no new specifics.
-5. Mark doubt instead of guessing. When something matters but the sources don't settle it (a date, a price, whether a feature reaches Europe), write the sentence carefully and put an `[EDITOR: ...]` note right after it saying what to check. Also list these checks in `editorNotes`.
+5. Hedge instead of guessing. When something matters but the sources don't settle it (a date, a price, whether a feature reaches Europe), either leave it out or say plainly what the source does and doesn't say ("the company hasn't said when it reaches Europe"). List each such point in `editorNotes` as one short line saying what to check. Never put notes or brackets for the editor in the article text: it must be ready to publish as written.
 6. Match length to substance. A thin story makes a short piece of 300 to 500 words. Never pad to reach a length.
 
 ## How it should sound

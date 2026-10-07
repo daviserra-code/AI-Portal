@@ -31,7 +31,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Acknowledge
-        run: gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket >/dev/null
+        run: |
+          if [ "$(gh pr view "$PR" --json state --jq .state)" != "OPEN" ]; then
+            gh pr comment "$PR" --body "This one is already published (or closed), so there is nothing to do."
+            exit 1
+          fi
+          gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket >/dev/null
       - name: Check out the pull request
         run: gh pr checkout "$PR"
       - uses: actions/setup-node@v4
