@@ -7,7 +7,7 @@ AI-Portal explains artificial intelligence for people who are not specialists. W
 
 ## Who we are
 
-AI-Portal is an independent publication owned by [legal owner name and country]. Our editor is [Editor name](/authors/editor), who approves every article before it goes live. Contact: [editorial email].
+AI-Portal is an independent publication owned by [legal owner name and country]. Our editor is [Davide Serra](/authors/davide-serra), who approves every article before it goes live. Contact: [info@ai-portal.si](mailto:info@ai-portal.si).
 
 ## What we cover
 

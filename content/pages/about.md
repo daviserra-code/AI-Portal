@@ -7,6 +7,6 @@ AI-Portal explains what is changing in artificial intelligence, why it matters a
 
 We publish a handful of carefully edited pieces a day rather than everything that happens. Our explainers, guides and glossary are kept up to date, so they stay useful long after the news moves on.
 
-**Who is behind it.** AI-Portal is owned by [legal owner name and country] and edited by [Editor name](/authors/editor). Contact: [editorial email].
+**Who is behind it.** AI-Portal is owned by [legal owner name and country] and edited by [Davide Serra](/authors/davide-serra). Contact: [info@ai-portal.si](mailto:info@ai-portal.si).
 
 **How we work.** We use AI to help research and draft, and a person checks, edits and approves everything before it is published. Read [how we use AI](/ai-policy), our [editorial policy](/editorial-policy) and our [corrections policy](/corrections).

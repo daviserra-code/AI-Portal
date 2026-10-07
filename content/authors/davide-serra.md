@@ -1,5 +1,5 @@
 ---
-name: "[Editor name]"
+name: "Davide Serra"
 role: Editor
 bio: "[One or two sentences: who you are, your background with technology, and why readers can trust your judgement.]"
 sameAs: []

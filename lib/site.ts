@@ -5,7 +5,7 @@ export const site = {
   description:
     "Plain-English explainers, guides and news about artificial intelligence and super intelligence, written with AI and checked by a named human editor.",
   language: "en",
-  editorialEmail: "[editorial email]",
+  editorialEmail: "info@ai-portal.si",
   owner: "[legal owner name and country]",
 };
 
