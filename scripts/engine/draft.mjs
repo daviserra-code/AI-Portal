@@ -18,7 +18,10 @@ const arg = (name, fallback) => {
 const hours = Number(arg("hours", 48));
 const picks = Math.min(Number(arg("picks", 2)), 2); // hard cap: see engine/README.md
 const out = arg("out", "engine-drafts.md");
-const MIN_TOTAL = 12; // triage total (four scores out of 5) a story needs to be drafted
+// Triage total (four scores out of 5) a story needs to be drafted. --test drafts the top story
+// whatever its score, to prove the prompts and API calls work on engine pull requests.
+const test = process.argv.includes("--test");
+const MIN_TOTAL = test ? 0 : 12;
 
 const TRIAGE_MODEL = "claude-haiku-5-5";
 const DRAFT_MODEL = "claude-opus-5-5";
@@ -196,6 +199,7 @@ let scored = [];
 
 if (candidates.length) {
   scored = (await triage(candidates, existing)).sort((a, b) => b.total - a.total);
+  for (const t of scored.slice(0, 6)) console.log(`::notice::Triage ${t.total}/20: ${t.story.headline} (${t.existing ? `update ${t.existing}` : t.reason})`);
   for (const pick of scored.filter((t) => t.total >= MIN_TOTAL && !t.existing).slice(0, picks)) {
     try {
       let made = await draft(pick, existing);
@@ -271,4 +275,5 @@ ${stories.filter((s) => !s.eligible).slice(0, 10).map(storyLine).join("\n")}
 
 </details>
 `);
+console.log(`::notice::${drafted.length} draft(s) from ${candidates.length} candidate(s)`);
 console.log(`Wrote ${out}: ${drafted.length} draft(s).`);
