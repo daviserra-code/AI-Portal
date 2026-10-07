@@ -12,6 +12,10 @@ if (!token || !chat) {
   process.exit(0);
 }
 
+// Optional: checks per file from the content engine (engine-checks.json).
+let checks = {};
+try { checks = JSON.parse(fs.readFileSync(process.env.CHECKS_FILE || "engine-checks.json", "utf8")); } catch {}
+
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const articles = [];
 let glossary = 0;
@@ -22,7 +26,8 @@ for (const file of files) {
   if (file.startsWith("content/glossary/")) glossary++;
   else if (file.startsWith("content/articles/")) {
     const notes = (content.match(/\[EDITOR:/g) ?? []).length;
-    articles.push(`• <b>${esc(data.title)}</b>\n${esc(data.dek)}${notes ? `\n⚠️ ${notes} editor note(s) to clear first` : ""}`);
+    const toCheck = (checks[file] ?? []).slice(0, 3).map((c) => `\n  ☐ ${esc(c)}`).join("");
+    articles.push(`• <b>${esc(data.title)}</b>\n${esc(data.dek)}${toCheck}${notes ? `\n⚠️ ${notes} editor note(s) left in the text: /publish will refuse it` : ""}`);
   }
 }
 if (articles.length === 0 && glossary === 0) {
