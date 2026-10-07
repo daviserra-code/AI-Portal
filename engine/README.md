@@ -15,13 +15,28 @@ The full plan is the "AI-Portal content engine" doc. In short:
 | `engine/feeds.json` | Sources, their section and trust tier. Edit this to add or drop a feed. |
 | `engine/seen.json` | Links already drafted or rejected, so a story never comes back. |
 | `scripts/engine/lib.mjs` | Feed parsing, AI filter, story grouping, ranking. |
-| `scripts/engine/dry-run.mjs` | Writes `engine-report.md`: today's picks, roundup candidates, feed health. |
-| `.github/workflows/engine.yml` | Runs the dry run daily at 06:00 Italian time; the report is in the run summary. |
+| `engine/prompts/triage.md` | How stories are judged. Edit it to change what counts as worth a piece. |
+| `engine/prompts/draft.md` | How drafts are written: voice, rules, banned phrases. Edit it to tune the writing. |
+| `scripts/engine/collect.mjs` | Reads all feeds and returns ranked stories. |
+| `scripts/engine/dry-run.mjs` | Writes `engine-report.md`: today's picks, roundup candidates, feed health. No model. |
+| `scripts/engine/draft.mjs` | Triage (Claude Haiku 5.5) and drafting (Claude Opus 5.5), the content gate, and `engine-drafts.md`. |
+| `.github/workflows/engine.yml` | Runs daily at 06:00 Italian time and opens a "Drafts for <day>" pull request. Needs the `ANTHROPIC_API_KEY` secret. |
 
-Run it locally with `npm run engine:dry-run`.
+Run it locally with `npm run engine:dry-run`, or `ANTHROPIC_API_KEY=... npm run engine:draft` to draft.
+
+## How a draft is made
+
+1. Stories with 2+ independent outlets go to triage, which scores each from 0 to 5 on reader impact, whether it will last, whether we can add something, and relevance to super intelligence and policy. A story needs 12 out of 20. A story that fits an existing page is listed as "update" instead of drafted.
+2. For each pick (max 2), the engine fetches the source pages and asks Claude for a draft that uses only those sources, with `[EDITOR: ...]` notes on anything to check. Source URLs the model did not receive are removed.
+3. The draft must pass `scripts/check-content.mjs`. A failing draft gets one retry with the errors, then is dropped.
+4. Drafts land in a pull request as `status: draft` with a checklist for each one. To publish, the editor fixes the text, deletes the notes, sets `status: approved` and `approvedBy`, and merges. To reject a story, delete its file; its links are in `seen.json`, so it never comes back.
+
+## Repository setting
+
+The workflow opens pull requests with GitHub's built-in token. This needs Settings > Actions > General > Workflow permissions > "Allow GitHub Actions to create and approve pull requests". Without it, drafts are pushed to a `drafts/...` branch and the run shows a warning.
 
 ## Steps
 
-1. Feeds and dry run (this step). No model, no writing.
-2. Reader-impact triage and drafting with Claude, the content gate, and a daily "Drafts" pull request.
+1. Feeds and dry run. Done.
+2. Reader-impact triage and drafting with Claude, the content gate, and a daily "Drafts" pull request. Done.
 3. Sunday roundup ("The week in AI, explained") and Observatory entries.
