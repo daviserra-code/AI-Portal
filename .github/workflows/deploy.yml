@@ -1,0 +1,80 @@
+name: Deploy
+# Builds the site image and runs it on the Hetzner server, next to AI-Radar.
+# Needs HETZNER_HOST and HETZNER_USER (Actions secrets or variables) and the secret HETZNER_SSH_KEY
+# (optional: HETZNER_PORT, default 22). Until they exist, the job is skipped.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  # The site listens only on the server's loopback; the web proxy publishes it.
+  APP_PORT: "3010"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check deploy secrets
+        id: secrets
+        env:
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER || vars.HETZNER_USER }}
+          KEY: ${{ secrets.HETZNER_SSH_KEY }}
+        run: |
+          if [ -n "$HOST" ] && [ -n "$USER" ] && [ -n "$KEY" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Deploy skipped: add HETZNER_HOST, HETZNER_USER and HETZNER_SSH_KEY in Settings > Secrets and variables > Actions."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.secrets.outputs.ready == 'true'
+
+      - name: Build image
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          docker build -t "ai-portal:${GITHUB_SHA::12}" .
+          docker save "ai-portal:${GITHUB_SHA::12}" | gzip > image.tar.gz
+
+      - name: Set up SSH
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
+          KEY: ${{ secrets.HETZNER_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Ship and restart
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.HETZNER_HOST || vars.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER || vars.HETZNER_USER }}
+          PORT: ${{ secrets.HETZNER_PORT || vars.HETZNER_PORT || '22' }}
+        run: |
+          TAG="ai-portal:${GITHUB_SHA::12}"
+          SSH="ssh -i ~/.ssh/deploy_key -p $PORT $USER@$HOST"
+          $SSH 'docker load' < image.tar.gz
+          $SSH "set -e
+            docker rm -f ai-portal-next >/dev/null 2>&1 || true
+            docker run -d --name ai-portal-next -p 127.0.0.1:$((APP_PORT + 1)):3000 $TAG
+            for i in \$(seq 1 30); do
+              curl -fsS -o /dev/null http://127.0.0.1:$((APP_PORT + 1))/robots.txt && break
+              [ \$i = 30 ] && { docker logs ai-portal-next; docker rm -f ai-portal-next; exit 1; }
+              sleep 2
+            done
+            docker rm -f ai-portal-next
+            docker rm -f ai-portal >/dev/null 2>&1 || true
+            docker run -d --name ai-portal --restart unless-stopped -p 127.0.0.1:$APP_PORT:3000 $TAG
+            sleep 3
+            curl -fsS -o /dev/null http://127.0.0.1:$APP_PORT/ && echo 'ai-portal is up on 127.0.0.1:$APP_PORT'
+            docker image ls ai-portal --format '{{.Repository}}:{{.Tag}}' | tail -n +4 | xargs -r docker rmi >/dev/null 2>&1 || true"

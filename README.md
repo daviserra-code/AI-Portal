@@ -40,3 +40,14 @@ All domains point at the same deployment; `next.config.ts` redirects them (308) 
 ## Design
 
 Tokens and rules are in `design-system/ai-portal/MASTER.md` (curated from ui-ux-pro-max-skill) and mirrored in `app/globals.css`. The look is temporary; the logo is a text placeholder.
+
+## Deploying
+
+Every push to `main` runs `.github/workflows/deploy.yml`: it builds the Docker image (which also runs the content check), copies it to the Hetzner server over SSH, starts a trial container, checks it answers, then swaps it in as the `ai-portal` container on `127.0.0.1:3010`. A failed check leaves the running site untouched.
+
+One-time setup:
+
+1. In GitHub, Settings > Secrets and variables > Actions, add `HETZNER_HOST`, `HETZNER_USER` and `HETZNER_SSH_KEY` (a private key used only for deploys; its public half goes in that user's `~/.ssh/authorized_keys`). Add `HETZNER_PORT` only if SSH is not on 22. Until these exist the deploy job is skipped, not failed.
+2. Once the domains point at the server, add `deploy/nginx-ai-portal.conf` to the server's nginx and run the certbot line in its header. If the server uses Caddy instead, a two-line `reverse_proxy 127.0.0.1:3010` site block does the same.
+
+To redeploy without a code change, run the Deploy workflow from the Actions tab.
