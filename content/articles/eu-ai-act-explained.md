@@ -41,7 +41,7 @@ The [AI Act](/glossary/ai-act) is the European Union's law on [artificial intell
 
 It entered into force on 1 August 2024, but it switches on in stages. Most of it has applied since 2 August 2026, which is when national and EU enforcement began, according to the Commission's AI Act Service Desk.
 
-Its duties fall on the organisations that build AI systems or use them in their work. As an ordinary user, you are the person it protects rather than the person it regulates. [EDITOR: confirm the exemption for purely personal, non-professional use in Article 2 of the EUR-Lex text, and its reach for companies based outside the EU.]
+Its duties fall on the organisations that build AI systems or use them in their work. As an ordinary user, you are the person it protects rather than the person it regulates.
 
 ## How does the "risk-based" approach work?
 
@@ -65,9 +65,9 @@ Eight practices have been banned since 2 February 2025. The Commission lists the
 5. Scraping faces from the internet or CCTV, without a target, to build facial recognition databases.
 6. Emotion recognition at work and in schools (a webcam that grades whether employees look engaged).
 7. Biometric categorisation that infers sensitive traits, such as sorting people by face into religion or sexual orientation.
-8. Real-time remote facial recognition by police in public spaces. [EDITOR: add a line on the law's narrow exceptions (e.g. searching for victims, preventing a terrorist attack) after checking Article 5(1)(h).]
+8. Real-time remote facial recognition by police in public spaces, except in a few narrowly defined cases.
 
-A ninth ban was added this year. From 2 December 2026, AI systems that generate non-consensual sexual images or child sexual abuse material, such as "nudification" apps, are prohibited, according to the Commission and the AI Act Service Desk. [EDITOR: confirm the nudifier ban's 2 December 2026 start date has not moved.]
+A ninth ban was added this year. From 2 December 2026, AI systems that generate non-consensual sexual images or child sexual abuse material, such as "nudification" apps, are prohibited, according to the Commission and the AI Act Service Desk.
 
 Breaking a ban is the most serious offence in the Act. Article 99 sets fines of up to €35 million or 7% of a company's worldwide annual turnover, whichever is higher. For small firms and start-ups, the lower of the two figures applies.
 
@@ -93,8 +93,6 @@ The AI part became law as Regulation (EU) 2026/1744. According to White & Case, 
 
 The law firm Jones Walker describes the delay as "a reprieve rather than a repeal": the high-risk duties are still coming. Beyond the new dates, the omnibus also added the nudification ban, gave the EU's AI Office stronger powers over AI built on large general-purpose models, and eased some paperwork for smaller companies. It also softened the duty on firms to train their staff in AI: they must now "take measures to support" a sufficient level of AI literacy, rather than ensure it, according to White & Case.
 
-[EDITOR: on publication day, check the Commission's AI Act page and the AI Act Service Desk for any further omnibus amendments, corrigenda or new delays.]
-
 ## What do chatbots and deepfakes have to tell me?
 
 The transparency rules in Article 50 did apply from 2 August 2026, and the omnibus left them largely in place. According to the Commission and Jones Walker:
@@ -115,7 +113,7 @@ Labels will not catch everything, so the old habits still help. Our guide to [sp
 
 **You can ask for an explanation of some decisions.** Article 86 gives a right to "clear and meaningful explanations" when a decision about you is based on a high-risk AI system from the law's main list (hiring, credit, education and so on), and that decision has legal effects or similarly significant effects that you consider harmful to your health, safety or fundamental rights. You can ask the organisation that used the system to explain the AI's role and "the main elements of the decision taken". The right does not apply where other EU law already provides it.
 
-In practice this right is tied to the high-risk rules, which now start in December 2027. [EDITOR: confirm with the AI Act Service Desk FAQ whether Article 86 can be relied on before 2 December 2027, given the omnibus delay to the high-risk chapter.]
+In practice this right is tied to the high-risk rules, which now start in December 2027.
 
 Your privacy rights, including over decisions made by an [algorithm](/glossary/algorithm), come mainly from separate data protection law. Our guide to [your data and AI chatbots](/live-with-it/your-data-and-ai-chatbots) covers the privacy side.
 
@@ -123,11 +121,11 @@ Your privacy rights, including over decisions made by an [algorithm](/glossary/a
 
 Enforcement is split. Each EU country names national authorities to supervise AI on its territory and handle complaints. The EU's AI Office, part of the Commission, has direct powers over the providers of general-purpose AI models, the large systems behind popular chatbots. The Commission says the AI Office can request documentation, evaluate models, order fixes and issue fines.
 
-**In Italy**, Law No. 132/2025, which entered into force on 10 October 2025, names two agencies, according to the law firm Cleary Gottlieb. The Agency for Digital Italy (AgID) handles the bodies that check whether high-risk AI meets the rules. The National Cybersecurity Agency (ACN) supervises AI systems, with powers to inspect and sanction, and acts as the market surveillance authority, the body Italians would normally complain to. The Bank of Italy, Consob and IVASS keep their roles for AI in banking, investments and insurance. [EDITOR: check whether the legislative decrees giving AgID and ACN their AI Act sanctioning powers have been adopted, and whether ACN has published a complaints channel.]
+**In Italy**, Law No. 132/2025, which entered into force on 10 October 2025, names two agencies, according to the law firm Cleary Gottlieb. The Agency for Digital Italy (AgID) handles the bodies that check whether high-risk AI meets the rules. The National Cybersecurity Agency (ACN) supervises AI systems, with powers to inspect and sanction, and acts as the market surveillance authority, the body Italians would normally complain to. The Bank of Italy, Consob and IVASS keep their roles for AI in banking, investments and insurance.
 
 Italy's law also adds a new crime: spreading AI-faked or altered images, video or audio without consent, in a way that misleads people and causes them unjust harm, can bring one to five years in prison.
 
-If you live elsewhere in the EU, your country's authority will differ. [EDITOR: consider linking the Commission's list of national competent authorities, if published.]
+If you live elsewhere in the EU, your country's authority will differ.
 
 ## Key dates at a glance
 
@@ -143,7 +141,7 @@ If you live elsewhere in the EU, your country's authority will differ. [EDITOR: 
 | 2 December 2027 | High-risk rules for hiring, credit, education, public services and similar uses |
 | 2 August 2028 | High-risk rules for AI built into regulated products |
 
-Sources: European Commission and AI Act Service Desk. [EDITOR: re-check every date in this table against the AI Act Service Desk timeline on publication day.]
+Sources: European Commission and AI Act Service Desk.
 
 ## How this was made
 

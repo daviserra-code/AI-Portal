@@ -53,7 +53,7 @@ Habits that check the story around the content, rather than the content itself. 
 
 **Ask who posted it first.** A screenshot of a screenshot, shared by an account you have never heard of, is not a source. Try to find the original upload: the first account, the date and whether that person or outlet has a track record.
 
-**Run a reverse image search.** Google's help page explains that you can upload an image, drag it into the search box or right-click it in Chrome and choose "Search with Google Lens". The results include websites showing the same or similar images. That often reveals an older photo, a different place or an obvious fake already debunked. [EDITOR: re-check the Google Lens steps on publication day; the menu wording changes.]
+**Run a reverse image search.** Google's help page explains that you can upload an image, drag it into the search box or right-click it in Chrome and choose "Search with Google Lens". The results include websites showing the same or similar images. That often reveals an older photo, a different place or an obvious fake already debunked.
 
 **See whether reputable outlets report it.** A real explosion at a famous landmark, or a real video of a world leader saying something shocking, will be on several established news sites within the hour. If only anonymous accounts have it, wait.
 
@@ -67,11 +67,11 @@ When a file carries Content Credentials, you may see a small "CR" pin. Clicking 
 
 Two caveats. The initiative itself says credentials "aren't intended to prescriptively indicate whether a piece of content is 'real'", and adding them is optional. So a missing credential proves nothing: most genuine photos online don't have one either.
 
-**Google's SynthID** takes a different approach: an invisible watermark built into the content as it is made. Google DeepMind says it marks images, video and audio from Google's tools and text from the Gemini app. You can upload an image, video or audio clip to Gemini, Google Search or Chrome and ask whether Google AI created or altered it. Google's SynthID Detector portal is now open to everyone and also checks content from partners including OpenAI and Nvidia, the company says. It only finds SynthID watermarks, so a "no" means "not made by these tools", not "real". [EDITOR: re-check which partners SynthID Detector supports, and whether Apple has joined, on publication day.]
+**Google's SynthID** takes a different approach: an invisible watermark built into the content as it is made. Google DeepMind says it marks images, video and audio from Google's tools and text from the Gemini app. You can upload an image, video or audio clip to Gemini, Google Search or Chrome and ask whether Google AI created or altered it. Google's SynthID Detector portal is now open to everyone and also checks content from partners including OpenAI and Nvidia, the company says. It only finds SynthID watermarks, so a "no" means "not made by these tools", not "real".
 
 **Platform labels** rely on these signals plus self-reporting. Meta shows an "AI info" label on Facebook, Instagram and Threads when it detects industry-standard AI indicators or when the poster says so. Since September 2024, posts that were only edited with AI have that label tucked into the post's menu, while fully AI-generated content keeps a visible label.
 
-YouTube requires creators to disclose realistic content that is made or meaningfully altered with AI, such as making a real person appear to say something they didn't. A label may then appear on the video player, or in the description for animated content. YouTube may also add labels itself when it finds C2PA data or its own systems detect AI. Cosmetic edits, captions and AI-written scripts don't need disclosure. [EDITOR: re-check Meta and YouTube label rules and wording on publication day.]
+YouTube requires creators to disclose realistic content that is made or meaningfully altered with AI, such as making a real person appear to say something they didn't. A label may then appear on the video player, or in the description for animated content. YouTube may also add labels itself when it finds C2PA data or its own systems detect AI. Cosmetic edits, captions and AI-written scripts don't need disclosure.
 
 The lesson is the same for all of them: a label is useful information when it is there. Its absence is not a clean bill of health.
 
@@ -81,7 +81,7 @@ The EU's [AI Act](/glossary/ai-act) has a transparency rule, Article 50, that ap
 
 First, anyone who uses AI to make a deepfake (image, audio or video that resembles real people and could falsely appear genuine) must disclose that it was artificially generated or manipulated. For obviously artistic, satirical or fictional work, the duty shrinks to flagging that AI content is present, in a way that doesn't spoil the work. AI-written text published to inform the public on matters of public interest must also be disclosed, unless a human has reviewed it and someone takes editorial responsibility.
 
-Second, companies that provide AI generators must mark their output in a machine-readable way, so that software can detect it. Under the "Digital Omnibus" amendment published in July 2026, systems already on the market before 2 August 2026 have until 2 December 2026 to comply, according to the law firm Garrigues. [EDITOR: confirm the 2 December 2026 grace period against the Official Journal text and check for any Commission code of practice on labelling.]
+Second, companies that provide AI generators must mark their output in a machine-readable way, so that software can detect it. Under the "Digital Omnibus" amendment published in July 2026, systems already on the market before 2 August 2026 have until 2 December 2026 to comply, according to the law firm Garrigues.
 
 In practice, this means more labels in Europe over the coming months. It doesn't mean every fake will be labelled: scammers don't follow disclosure rules. Our [EU AI Act explainer](/live-with-it/eu-ai-act-explained) covers the rest of the law.
 

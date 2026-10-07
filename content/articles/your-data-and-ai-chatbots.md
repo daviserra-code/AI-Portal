@@ -71,15 +71,15 @@ To turn it off on the web:
 2. Select **Data controls**.
 3. Turn off **Improve the model for everyone** and select **Done**.
 
-On the iOS or Android app, open the sidebar, tap your profile icon, go to **Data controls** and turn off the same switch. OpenAI also offers a "Do not train on my content" request in its Privacy Portal. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+On the iOS or Android app, open the sidebar, tap your profile icon, go to **Data controls** and turn off the same switch. OpenAI also offers a "Do not train on my content" request in its Privacy Portal.
 
 **Temporary Chat.** Start a new chat and select **Temporary** before sending your first message. These chats don't appear in your history, don't create memories and aren't used for training, but OpenAI says it "may keep a copy of a temporary chat for up to 30 days for safety purposes."
 
-**Deleting history.** For one chat, open the ••• menu next to it in your history and select **Delete**. For everything, go to **Settings**, then **Data controls**, then **Delete all chats**. OpenAI says deleted chats are scheduled for permanent deletion from its systems within 30 days, unless it must keep them longer for security or legal reasons. Turning off training does not delete saved chats; those are separate steps. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+**Deleting history.** For one chat, open the ••• menu next to it in your history and select **Delete**. For everything, go to **Settings**, then **Data controls**, then **Delete all chats**. OpenAI says deleted chats are scheduled for permanent deletion from its systems within 30 days, unless it must keep them longer for security or legal reasons. Turning off training does not delete saved chats; those are separate steps.
 
 ## Claude (Anthropic)
 
-**Training.** Since Anthropic changed its consumer terms in 2025, people on the Free, Pro and Max plans choose whether their chats can be used to improve Claude. Existing users had to make that choice by 8 October 2025; new users make it at sign-up. Team, Enterprise, Education and API use fall under commercial terms and are not covered by this setting, Anthropic says. [EDITOR: check what the sign-up screen pre-selects today, and whether the help pages now state a default]
+**Training.** Since Anthropic changed its consumer terms in 2025, people on the Free, Pro and Max plans choose whether their chats can be used to improve Claude. Existing users had to make that choice by 8 October 2025; new users make it at sign-up. Team, Enterprise, Education and API use fall under commercial terms and are not covered by this setting, Anthropic says.
 
 To change it:
 
@@ -87,13 +87,13 @@ To change it:
 2. Select **Privacy** (claude.ai/settings/data-privacy-controls).
 3. Under **Help improve our AI models**, turn the switch off.
 
-The steps are the same in the mobile app. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+The steps are the same in the mobile app.
 
 **How long it keeps chats.** If you allow training, Anthropic says it may keep de-identified chats "for up to 5 years" in its training pipelines. If you don't, the existing 30-day period applies. Chats flagged by its safety systems can be kept longer: inputs and outputs for up to 2 years.
 
 **Incognito chats.** In a new chat outside a project, click the ghost icon in the top right. Incognito chats aren't saved to your history or Claude's memory and aren't used for training, even if you allowed training. Anthropic keeps them for 30 days by default.
 
-**Deleting history.** Open a conversation, click its name at the top and choose **Delete**. To remove several, open your Recents list, choose **View all**, tick the ones you want and click **Delete Selected**. Anthropic says deleted chats leave its back-end storage within 30 days, and a deleted chat won't be used for future training. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+**Deleting history.** Open a conversation, click its name at the top and choose **Delete**. To remove several, open your Recents list, choose **View all**, tick the ones you want and click **Delete Selected**. Anthropic says deleted chats leave its back-end storage within 30 days, and a deleted chat won't be used for future training.
 
 ## Gemini (Google)
 
@@ -104,13 +104,13 @@ To turn it off:
 1. On a computer, go to gemini.google.com, open **Settings & help** and choose **Activity** (or go to myactivity.google.com/product/gemini).
 2. Near the top, click **On**, then choose **Turn off** or **Turn off and delete activity**.
 
-With Keep Activity off, Google still keeps chats for up to 72 hours to run the service, but they aren't used to train its models unless you send feedback. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+With Keep Activity off, Google still keeps chats for up to 72 hours to run the service, but they aren't used to train its models unless you send feedback.
 
 **How long it keeps chats.** By default, activity is auto-deleted after 18 months. On the same Activity page you can choose 3 or 36 months, or no auto-delete.
 
 **Temporary chat.** On gemini.google.com, signed in with a personal Google account, click **Temporary chat** next to **New chat**. Google says temporary chats are not used to train its models and are kept for 72 hours.
 
-**Deleting history.** On the Activity page, click **Delete activity item** next to a single chat, or click **Delete** above your activity and choose a range such as **Last hour**, **Last day** or **All time**. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+**Deleting history.** On the Activity page, click **Delete activity item** next to a single chat, or click **Delete** above your activity and choose a range such as **Last hour**, **Last day** or **All time**.
 
 ## Microsoft Copilot
 
@@ -121,21 +121,21 @@ In the older app, the steps were:
 1. On copilot.com, click your profile icon, then your profile name, then **Privacy**. (On Windows or macOS: profile icon, **Settings**, **Privacy**. On mobile: menu, profile icon, **Account**, **Privacy**.)
 2. Turn off **Training on conversation activity** and **Training on voice conversations**.
 
-Microsoft released a new version of the Copilot app on 18 August 2026, and the help pages for that version that we checked do not describe a training switch. [EDITOR: open each app and check these setting names and paths on the day of publishing; confirm where the training opt-out lives in the new Copilot app and whether the default has changed]
+Microsoft released a new version of the Copilot app on 18 August 2026, and the help pages for that version that we checked do not describe a training switch.
 
 **How long it keeps chats.** "By default, we store conversation activity for 18 months," according to the FAQ.
 
-**Temporary chat.** None of the Microsoft help pages we opened mention a temporary or private chat mode. [EDITOR: check whether the new Copilot app offers one]
+**Temporary chat.** None of the Microsoft help pages we opened mention a temporary or private chat mode.
 
-**Deleting history.** In the new app, open the **More** menu next to a conversation in the Chats list and choose **Delete**. To delete your whole history, Microsoft points you to the Microsoft privacy dashboard. Saved memories are separate: go to **Settings**, **Personalization**, then **Manage** next to **Saved memories**. [EDITOR: open each app and check these setting names and paths on the day of publishing]
+**Deleting history.** In the new app, open the **More** menu next to a conversation in the Chats list and choose **Delete**. To delete your whole history, Microsoft points you to the Microsoft privacy dashboard. Saved memories are separate: go to **Settings**, **Personalization**, then **Manage** next to **Saved memories**.
 
 ## Meta AI
 
 **Training.** Meta's help page puts it plainly: "Meta uses your interactions with AIs to improve AI at Meta." In the EU, Meta announced in April 2025 that it would train its models on public posts and comments from adults, and on the questions people send to Meta AI. It says it does not train on private messages with friends and family, unless someone in the chat shares them with Meta AI. Public data from EU users under 18 is excluded.
 
-On the pages we could open, Meta does not describe an in-app switch to stop your Meta AI chats being used for training. For people in the EU, the route Meta gives is an objection form, linked from its in-app and email notices, which it says you can use "at any time". [EDITOR: open each app and check these setting names and paths on the day of publishing; find the current objection form link in Meta's Privacy Centre and add it]
+On the pages we could open, Meta does not describe an in-app switch to stop your Meta AI chats being used for training. For people in the EU, the route Meta gives is an objection form, linked from its in-app and email notices, which it says you can use "at any time".
 
-**How long it keeps chats.** Meta's help page does not give a retention period for Meta AI chats. [EDITOR: check Meta's privacy policy for a retention period]
+**How long it keeps chats.** Meta's help page does not give a retention period for Meta AI chats.
 
 **Deleting history.** In the Meta AI app:
 
@@ -143,7 +143,7 @@ On the pages we could open, Meta does not describe an in-app switch to stop your
 2. Under **App settings**, tap **Data & privacy**, then **Manage your information**.
 3. Tap **Delete all chats and media**, then **Delete all**.
 
-Meta's page does not cover deleting Meta AI chats inside WhatsApp, Instagram or Facebook. [EDITOR: open each app and check these setting names and paths on the day of publishing, including the WhatsApp, Instagram and Facebook versions]
+Meta's page does not cover deleting Meta AI chats inside WhatsApp, Instagram or Facebook.
 
 ## What should I never paste into a chatbot?
 

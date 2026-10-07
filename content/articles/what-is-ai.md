@@ -61,7 +61,7 @@ The [chatbots](/glossary/chatbot) most people now use, such as ChatGPT, Gemini o
 
 The core trick is surprisingly simple to describe. Anthropic, which makes Claude, says that after its first stage of training "the model can predict the most likely next word in a sequence based on the words that come before it," and compares this to the autocomplete on your phone. OpenAI's help centre describes the same thing: the model generates a response "one word at a time", each time predicting the next most likely word. (Strictly, models work in [tokens](/glossary/token), which are chunks of words, but "word" is close enough.)
 
-Where does all that text come from? OpenAI says it uses information that is publicly available on the internet, information it licenses from partners, and information provided by users, human trainers and researchers. Anthropic lists similar sources: public web pages, third-party datasets, data from users who opt in, and data it generates itself. Both companies say their models learn general patterns rather than storing copies of what they read. [EDITOR: re-check both companies' training-data pages on publication day, as wording and opt-in rules change.]
+Where does all that text come from? OpenAI says it uses information that is publicly available on the internet, information it licenses from partners, and information provided by users, human trainers and researchers. Anthropic lists similar sources: public web pages, third-party datasets, data from users who opt in, and data it generates itself. Both companies say their models learn general patterns rather than storing copies of what they read.
 
 A model that has only learned to predict text is not yet a helpful assistant. It might continue your question with three more questions instead of answering it. So companies add a second stage, often called post-training, where people step in.
 
@@ -79,7 +79,7 @@ The first is how models learn. Patterns that repeat across millions of documents
 
 The second is how models are tested. OpenAI says most evaluations grade only on accuracy, which encourages guessing: "Saying 'I don't know' guarantees zero points." A model trained to score well learns that a confident guess beats an honest shrug.
 
-This matters in practice. In October 2025, 22 public broadcasters from 18 countries, led by the European Broadcasting Union and the BBC, tested ChatGPT, Copilot, Gemini and Perplexity on more than 3,000 news questions. According to Belgian broadcaster VRT, which took part, 45% of the answers had at least one significant problem, and 31% had missing or misleading sources. [EDITOR: check whether the EBU has published a newer round of this study and update the figures if so.]
+This matters in practice. In October 2025, 22 public broadcasters from 18 countries, led by the European Broadcasting Union and the BBC, tested ChatGPT, Copilot, Gemini and Perplexity on more than 3,000 news questions. According to Belgian broadcaster VRT, which took part, 45% of the answers had at least one significant problem, and 31% had missing or misleading sources.
 
 What you can do: treat a chatbot's answer as a first draft, not a verdict. Ask for its sources, open them, and check anything that matters (health, money, law, names and dates) somewhere else. Our guide to [writing a good prompt](/use/how-to-write-a-good-prompt) also helps.
 
@@ -87,8 +87,8 @@ What you can do: treat a chatbot's answer as a first draft, not a verdict. Ask f
 
 Some of the most reliable AI is so familiar that people forget it is there.
 
-- **Spam filters.** Google said in 2019 that machine learning helped Gmail block 99.9% of spam, phishing and malware, according to TechRadar's report. Spam filtering suits AI well: there are billions of examples, and a mistake is easy to fix. [EDITOR: this figure is from 2019; check for a more recent Google statement.]
-- **Photo search.** Your phone can find "beach" or "dog" in thousands of unlabelled pictures. In September 2024, Google said its Photos app had begun accepting everyday descriptions such as "Kayaking on a lake surrounded by mountains." [EDITOR: check current Google Photos and Apple Photos search features on publication day.]
+- **Spam filters.** Google said in 2019 that machine learning helped Gmail block 99.9% of spam, phishing and malware, according to TechRadar's report. Spam filtering suits AI well: there are billions of examples, and a mistake is easy to fix.
+- **Photo search.** Your phone can find "beach" or "dog" in thousands of unlabelled pictures. In September 2024, Google said its Photos app had begun accepting everyday descriptions such as "Kayaking on a lake surrounded by mountains."
 - **Translation.** In 2016, Google switched its Translate service to a neural system that treats "the entire input sentence as a unit for translation," instead of translating phrase by phrase. Its own human raters found errors fell by 55% to 85% on several major language pairs.
 - **Chatbots.** They are good at drafting, summarising, explaining and brainstorming. They are weaker at exact facts, recent events and arithmetic, and they cannot tell you when they are out of their depth unless they have been built to.
 

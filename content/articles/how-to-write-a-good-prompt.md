@@ -133,10 +133,8 @@ Each pair below shows a typical first attempt, then a better one. The better ver
 
 **After:** "I saw a claim online that we only use 10% of our brains. Tell me whether scientists agree with it, explain where the idea came from, and point me to two reliable sources I can open myself. If you're not sure about something, say so."
 
-[EDITOR: add our own screenshots of 2-3 of these prompts and answers]
-
 ## Why do the "after" versions work better?
 
 Look back at the pairs and the same few things keep appearing: a reason, a bit of background, a clear audience, and a shape for the answer. Several also set limits ("don't invent experience", "don't give the answer", "say so if you're not sure"), which steer the chatbot away from its habit of filling gaps with confident guesses.
 
-None of them use special phrasing. If an answer still misses, reply in plain words: "too formal", "shorter", "you've assumed we have a car, we don't". OpenAI's ChatGPT guide recommends exactly that cycle: start with a first prompt, review the response, and refine. For more on which chatbot to try, see our comparison of [the main chatbots](/use/chatbots-compared). [EDITOR: check the chatbots-compared article is live before publishing, or remove the link.]
+None of them use special phrasing. If an answer still misses, reply in plain words: "too formal", "shorter", "you've assumed we have a car, we don't". OpenAI's ChatGPT guide recommends exactly that cycle: start with a first prompt, review the response, and refine. For more on which chatbot to try, see our comparison of [the main chatbots](/use/chatbots-compared).

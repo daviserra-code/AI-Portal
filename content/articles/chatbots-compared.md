@@ -95,11 +95,11 @@ All seven have a free version. The paid plans buy you higher limits and access t
 | Mistral Vibe | Yes, with limits | Pro $14.99 (excluding tax) | Connectors, scheduled tasks, image generation | Web, phone apps |
 | Perplexity | Yes | Pro $20, Max $200 | Answers from web search with numbered citations | Web, phone apps |
 
-Prices are in US dollars as shown by each maker or, where the maker's page shows none, as reported by the press. [EDITOR: re-check every price in this table on publication day, and add euro prices where makers list them. Also confirm the "Where it works" column, especially phone apps for Perplexity and a standalone Meta AI app.]
+Prices are in US dollars as shown by each maker or, where the maker's page shows none, as reported by the press.
 
-Some details behind those numbers. ChatGPT's pricing page did not display amounts when we checked; OpenAI's help pages give Plus at $20 and three Pro tiers at $100, $200 and $500 a month, and AI Business reported Go at $8 in the US. [EDITOR: confirm ChatGPT Free, Go, Plus and Pro prices on chatgpt.com/pricing on publication day.] OpenAI says Go "may" show ads in future, and AI Business reported in January that OpenAI planned ad tests on the free and Go tiers in the US. [EDITOR: check whether ChatGPT ads have launched, and where.]
+Some details behind those numbers. ChatGPT's pricing page did not display amounts when we checked; OpenAI's help pages give Plus at $20 and three Pro tiers at $100, $200 and $500 a month, and AI Business reported Go at $8 in the US. OpenAI says Go "may" show ads in future, and AI Business reported in January that OpenAI planned ad tests on the free and Go tiers in the US.
 
-Perplexity's own pages list no prices; the $20 and $200 figures come from TechCrunch's report of July 2025. [EDITOR: confirm current Perplexity Pro and Max prices.] Mistral's pricing page showed Pro at $14.99, while heise reported €17.99 a month at the Vibe launch. [EDITOR: confirm Mistral Vibe Pro price in euros and dollars.] Meta's paid plans were, according to The Next Web in May, rolling out first in Singapore, Guatemala and Bolivia. [EDITOR: check whether Meta One AI plans have reached Europe.]
+Perplexity's own pages list no prices; the $20 and $200 figures come from TechCrunch's report of July 2025. Mistral's pricing page showed Pro at $14.99, while heise reported €17.99 a month at the Vibe launch. Meta's paid plans were, according to The Next Web in May, rolling out first in Singapore, Guatemala and Bolivia.
 
 ## Which is good for help with writing?
 
@@ -129,7 +129,7 @@ Google lists image generation and editing in Gemini's free plan. OpenAI lists im
 
 Most have their own phone apps, and Meta AI lives inside apps you may already have. Meta AI is the easiest to reach if you use WhatsApp, because it is already there.
 
-For talking out loud: Google's free plan includes Gemini Live, which can also look through your camera. OpenAI says free ChatGPT users get limited access to its Live voice mode, and that video and screen sharing need a paid plan's Advanced voice option. Anthropic says Claude's voice mode, in beta and in English, is rolling out to all plans on its mobile apps, with free users getting roughly 20 to 30 voice messages per session. Microsoft lists help "from your screen or camera" with higher usage on its paid plans. [EDITOR: re-check voice features and limits for each app on publication day.]
+For talking out loud: Google's free plan includes Gemini Live, which can also look through your camera. OpenAI says free ChatGPT users get limited access to its Live voice mode, and that video and screen sharing need a paid plan's Advanced voice option. Anthropic says Claude's voice mode, in beta and in English, is rolling out to all plans on its mobile apps, with free users getting roughly 20 to 30 voice messages per session. Microsoft lists help "from your screen or camera" with higher usage on its paid plans.
 
 ## Which is best if you care about privacy?
 
@@ -143,17 +143,13 @@ What the makers say, in brief:
 - **Copilot:** Microsoft uses conversations for training by default, but signed-in users can opt out at any time.
 - **Mistral Vibe:** Mistral says inputs and outputs are used for training by default, and you can opt out.
 
-[EDITOR: re-check every privacy setting name and default on publication day; add Meta AI's and Perplexity's training policies.] Whatever you choose, keep passwords, health records and other people's personal details out of chatbots.
+Whatever you choose, keep passwords, health records and other people's personal details out of chatbots.
 
 ## What about using them in the EU?
 
 ChatGPT Go, OpenAI says, can be bought in every country where ChatGPT is supported, and Google says its paid AI plans are offered in more than 140 countries and territories. Mistral is a French company and lists euro prices.
 
-Meta AI arrived in Europe later and smaller. TechCrunch reported in March 2025 that it launched across all 27 EU countries in six languages, but without image generation and other creative tools available in the US. [EDITOR: check whether Meta AI in the EU now has image generation.] Rules also differ here: the EU's [AI Act](/glossary/ai-act) sets duties for these companies, explained in our [EU AI Act guide](/live-with-it/eu-ai-act-explained). [EDITOR: confirm Claude, Copilot and Perplexity availability in Slovenia and the wider EU.]
-
-## How do they compare on the same tasks?
-
-[EDITOR: run our own side-by-side test with the same 5 tasks on each assistant and add results here]
+Meta AI arrived in Europe later and smaller. TechCrunch reported in March 2025 that it launched across all 27 EU countries in six languages, but without image generation and other creative tools available in the US. Rules also differ here: the EU's [AI Act](/glossary/ai-act) sets duties for these companies, explained in our [EU AI Act guide](/live-with-it/eu-ai-act-explained).
 
 ## How should you choose?
 

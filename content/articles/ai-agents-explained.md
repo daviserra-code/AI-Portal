@@ -49,15 +49,15 @@ Three things follow from that. Agents can do work that takes many steps. They ca
 
 ## Which agents can you actually use today?
 
-As of October 2026, these are the main consumer offers. Names, plans and prices change often. [EDITOR: re-check every product name, plan and availability below on publication day]
+As of October 2026, these are the main consumer offers. Names, plans and prices change often.
 
-**OpenAI.** OpenAI's earlier "ChatGPT agent" mode has been retired; its help page now says "ChatGPT agent is no longer available" and points users to ChatGPT Work. According to The Next Web, ChatGPT Work launched on 10 July 2026 and "can take action across a user's apps and files", runs scheduled tasks, and on the desktop app can use a built-in browser and operate your computer by clicking, typing and moving files. OpenAI's product page says it is available on all plans in the Mac and Windows desktop apps, and on Plus, Pro, Business, Enterprise and Edu on web and mobile. [EDITOR: confirm Free-plan access and current usage limits]
+**OpenAI.** OpenAI's earlier "ChatGPT agent" mode has been retired; its help page now says "ChatGPT agent is no longer available" and points users to ChatGPT Work. According to The Next Web, ChatGPT Work launched on 10 July 2026 and "can take action across a user's apps and files", runs scheduled tasks, and on the desktop app can use a built-in browser and operate your computer by clicking, typing and moving files. OpenAI's product page says it is available on all plans in the Mac and Windows desktop apps, and on Plus, Pro, Business, Enterprise and Edu on web and mobile.
 
 **Anthropic.** Anthropic, the company behind Claude (and the maker of the AI used to help draft this article), announced on 26 August 2026 that Claude in Chrome is "generally available on every paid Claude plan." It is a browser extension that can read pages, click links, type and fill in forms using the logins you already have. Anthropic says it does not yet run on other Chromium browsers or on mobile.
 
-**Google.** At its developer conference in May 2026, Google announced Gemini Spark, which it calls a "24/7 personal AI agent". Google says it works with Gmail, Docs and Slides, keeps running in the cloud when you close your laptop, and can handle jobs like checking credit card statements for forgotten subscriptions. Google said it would start with trusted testers and then a beta for Google AI Ultra subscribers in the US, with features varying by plan and country. [EDITOR: check current Spark availability, countries and whether local browser control has shipped]
+**Google.** At its developer conference in May 2026, Google announced Gemini Spark, which it calls a "24/7 personal AI agent". Google says it works with Gmail, Docs and Slides, keeps running in the cloud when you close your laptop, and can handle jobs like checking credit card statements for forgotten subscriptions. Google said it would start with trusted testers and then a beta for Google AI Ultra subscribers in the US, with features varying by plan and country.
 
-**Microsoft.** Microsoft launched Copilot Tasks in February 2026, describing it, according to Thurrott.com, as "a to-do list that does itself." It works in the background with its own browser and, per eWeek, can draft email replies, compare service providers, book venues and track price changes. At launch it was a limited research preview with a waitlist. [EDITOR: check whether Copilot Tasks is still waitlist-only]
+**Microsoft.** Microsoft launched Copilot Tasks in February 2026, describing it, according to Thurrott.com, as "a to-do list that does itself." It works in the background with its own browser and, per eWeek, can draft email replies, compare service providers, book venues and track price changes. At launch it was a limited research preview with a waitlist.
 
 ## What are agents good at?
 
@@ -87,7 +87,7 @@ The UK's National Cyber Security Centre says current language models "simply do 
 
 **Start small.** Give it research and comparison jobs first, where the worst outcome is a wrong list you can check. Hand over tasks that touch money or other people only once you have seen how it behaves.
 
-**Approve before it pays or sends.** Most agents now ask before high-stakes actions: Google says Spark is "designed to ask you first before performing high-stakes actions like spending money or sending emails", and Microsoft says Copilot Tasks asks for consent before spending money or sending messages. Keep those confirmations switched on. Anthropic's Chrome extension lets Claude act without asking each time, with a safety classifier in place of your approval; you can turn that automatic approval off in its settings. [EDITOR: re-check the default approval settings for each product on publication day]
+**Approve before it pays or sends.** Most agents now ask before high-stakes actions: Google says Spark is "designed to ask you first before performing high-stakes actions like spending money or sending emails", and Microsoft says Copilot Tasks asks for consent before spending money or sending messages. Keep those confirmations switched on. Anthropic's Chrome extension lets Claude act without asking each time, with a safety classifier in place of your approval; you can turn that automatic approval off in its settings.
 
 **Use separate accounts where you can.** A secondary email address, a browser profile with only the logins the task needs, or a prepaid or virtual card with a low limit all shrink the damage if something goes wrong.
 
