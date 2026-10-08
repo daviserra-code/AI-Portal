@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/kids-teens-and-ai-chatbots.svg
 imageAlt: "A large pink phone and a smaller phone, each showing a chat bubble, sheltering under an open umbrella."

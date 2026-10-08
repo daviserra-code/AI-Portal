@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/how-chatbots-work.svg
 imageAlt: "A green chat bubble with lines of writing, a short line leading to a row of four tiles, the last one yellow and raised a little above the others."

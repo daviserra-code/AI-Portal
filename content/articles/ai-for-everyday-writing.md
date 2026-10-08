@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-everyday-writing.svg
 imageAlt: "An open envelope with a sheet of lined paper sliding out, next to a short stack of pages held by a yellow paper clip."

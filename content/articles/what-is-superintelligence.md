@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-superintelligence.svg
 imageAlt: "A small figure standing at the foot of a very tall purple tower with a ladder that ends halfway up, and a yellow sun behind the top."

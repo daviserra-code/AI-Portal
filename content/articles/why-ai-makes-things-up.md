@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/why-ai-makes-things-up.svg
 imageAlt: "A green chat window with two speech bubbles, and a magnifying glass with a yellow handle over it showing a crossed-out line."
