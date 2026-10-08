@@ -1,11 +1,12 @@
-import { getArticles } from "@/lib/content";
+import { getArticles, getTerms } from "@/lib/content";
 import { pillars, site } from "@/lib/site";
 
-// Optional: Google Search ignores llms.txt, but browser agents and Lighthouse look for it.
+// A plain-text map of the site for AI assistants and agents. Google Search ignores llms.txt.
 export const dynamic = "force-static";
 
 export function GET() {
   const articles = getArticles().filter((a) => a.status === "approved");
+  const terms = getTerms().filter((t) => t.status === "approved");
   const lines = [
     `# ${site.name}`,
     "",
@@ -20,6 +21,12 @@ export function GET() {
     `- [Corrections](${site.url}/corrections)`,
     ...(articles.length
       ? ["", "## Articles", ...articles.map((a) => `- [${a.title}](${site.url}/${a.pillar}/${a.slug}): ${a.dek}`)]
+      : []),
+    "",
+    "## Super intelligence observatory",
+    `- [Observatory](${site.url}/super-intelligence/observatory): a dated, sourced timeline of how governments and companies use the term "super intelligence".`,
+    ...(terms.length
+      ? ["", "## Glossary", ...terms.map((t) => `- [${t.term}](${site.url}/glossary/${t.slug}): ${t.definition}`)]
       : []),
     "",
   ];

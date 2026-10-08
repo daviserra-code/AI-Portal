@@ -86,3 +86,8 @@ jobs:
             sleep 3
             curl -fsS -o /dev/null http://127.0.0.1:$APP_PORT/ && echo 'ai-portal is up on 127.0.0.1:$APP_PORT'
             docker image ls ai-portal --format '{{.Repository}}:{{.Tag}}' | tail -n +4 | xargs -r docker rmi >/dev/null 2>&1 || true"
+
+      - name: Tell search engines about new pages (IndexNow)
+        if: steps.secrets.outputs.ready == 'true'
+        continue-on-error: true
+        run: node scripts/seo/indexnow.mjs
