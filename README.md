@@ -48,6 +48,6 @@ Every push to `main` runs `.github/workflows/deploy.yml`: it builds the Docker i
 One-time setup:
 
 1. In GitHub, Settings > Secrets and variables > Actions, add `HETZNER_HOST`, `HETZNER_USER` and `HETZNER_SSH_KEY` (a private key used only for deploys; its public half goes in that user's `~/.ssh/authorized_keys`). Add `HETZNER_PORT` only if SSH is not on 22. Until these exist the deploy job is skipped, not failed.
-2. Once the domains point at the server, add `deploy/nginx-ai-portal.conf` to the server's nginx and run the certbot line in its header. If the server uses Caddy instead, a two-line `reverse_proxy 127.0.0.1:3010` site block does the same.
+2. Once the domains point at the server, run as root on it: `curl -fsSL https://raw.githubusercontent.com/daviserra-code/AI-Portal/main/deploy/setup-domains.sh | bash`. It installs `deploy/nginx-ai-portal.conf`, checks nginx, and gets the certificates for every name whose DNS is ready (run it again after adding the www records).
 
 To redeploy without a code change, run the Deploy workflow from the Actions tab.
