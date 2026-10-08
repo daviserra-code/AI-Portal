@@ -1,5 +1,29 @@
 [
   {
+    "date": "2025-06-30",
+    "title": "Meta reorganises its AI work as Meta Superintelligence Labs",
+    "summary": "In an internal memo, Mark Zuckerberg said \"developing superintelligence is coming into sight\" and grouped Meta's AI teams under a new unit led by Alexandr Wang. He described the goal as \"personal superintelligence for everyone\".",
+    "source": "https://www.nbcmiami.com/news/business/money-report/mark-zuckerberg-announces-creation-of-meta-superintelligence-labs-read-the-memo/3648623/"
+  },
+  {
+    "date": "2025-10-22",
+    "title": "Open letter calls for a prohibition on superintelligence",
+    "summary": "The Future of Life Institute released the Statement on Superintelligence, calling for a ban on its development until there is broad scientific consensus it can be done safely and strong public support. More than 700 people signed at launch, including Geoffrey Hinton and Yoshua Bengio.",
+    "source": "https://cyberscoop.com/ai-superintelligence-ban-open-letter-future-of-life-harry-meghan-tech-leaders/"
+  },
+  {
+    "date": "2025-11-06",
+    "title": "Microsoft forms the MAI Superintelligence Team",
+    "summary": "Mustafa Suleyman, head of Microsoft AI, announced a team working towards \"humanist superintelligence\". He described it as advanced AI kept within limits and in service of people, rather than an unbounded system.",
+    "source": "https://microsoft.ai/blog/towards-humanist-superintelligence"
+  },
+  {
+    "date": "2026-09-23",
+    "title": "Sanders and Casar introduce the Ban Artificial Superintelligence Act",
+    "summary": "The bill would ban building AI that could \"destroy or disempower humanity\", pause advanced AI development until a regulator sets safety rules, and create a cabinet-level Department of Artificial Intelligence. Violations could bring up to 20 years in prison.",
+    "source": "https://aljazeera.com/economy/2026/9/23/us-lawmakers-propose-sweeping-ai-restrictions-with-superintelligence-ban"
+  },
+  {
     "date": "2026-09-29",
     "title": "Executive order \"Inaugurating the Era of Super Intelligence\" signed",
     "summary": "US federal agencies are told to replace \"artificial intelligence\" and \"AI\" with \"super intelligence\" and \"SI\" in official communications. Statutes and contracts are not rewritten.",
@@ -10,5 +34,11 @@
     "title": "Six AI companies sign the voluntary White House Accord on Super Intelligence",
     "summary": "Anthropic, Google, Meta, Nvidia, OpenAI and xAI commit to internal oversight, independent audits and board review. The accord carries no legal penalties.",
     "source": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Elon Musk says SpaceXAI will be renamed SpaceXSI",
+    "summary": "Replying on X after the US executive order, Musk confirmed the AI arm of SpaceX would switch to the new term: \"No more AI. SI, it's better.\"",
+    "source": "https://www.foxbusiness.com/technology/elon-musk-rebrands-spacexai-following-trump-directive"
   }
 ]
