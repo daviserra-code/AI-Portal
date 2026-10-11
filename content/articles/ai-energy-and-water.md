@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-11"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-energy-and-water.svg
 imageAlt: "A speech bubble plugged into a wall socket by a cable, next to a single yellow drop of water."

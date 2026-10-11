@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-11"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-ai-safety.svg
 imageAlt: "A purple control box with a big yellow stop button, its cable trailing off the edge, and a small figure reaching up towards the button."

@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-11"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/does-it-matter-how-you-talk-to-ai.svg
 imageAlt: "A periwinkle chat window with two speech bubbles, one jagged and one rounded, with a yellow heart beside the window."
