@@ -26,7 +26,7 @@
     { "name": "Pew Research", "url": "https://www.pewresearch.org/feed/", "section": "live-with-it", "tier": 5, "general": true },
     { "name": "AI Snake Oil", "url": "https://www.aisnakeoil.com/feed", "section": "live-with-it", "tier": 4 },
     { "name": "EU Digital Strategy", "url": "https://digital-strategy.ec.europa.eu/en/rss.xml", "section": "super-intelligence", "tier": 5, "official": true, "general": true },
-    { "name": "UK AI Security Institute", "url": "https://www.aisi.gov.uk/rss.xml", "section": "super-intelligence", "tier": 5, "official": true },
+    { "name": "UK AI Security Institute", "url": "https://www.gov.uk/government/organisations/ai-security-institute.atom", "alt": ["https://www.aisi.gov.uk/rss.xml"], "section": "super-intelligence", "tier": 5, "official": true },
     { "name": "NIST", "url": "https://www.nist.gov/news-events/news/rss.xml", "section": "super-intelligence", "tier": 5, "official": true, "general": true },
     { "name": "Import AI", "url": "https://jack-clark.net/feed/", "section": "super-intelligence", "tier": 4 },
     { "name": "CAIS AI Safety Newsletter", "url": "https://newsletter.safe.ai/feed", "section": "super-intelligence", "tier": 4 },

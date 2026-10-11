@@ -21,7 +21,7 @@ const out = arg("out", "engine-drafts.md");
 // Triage total (four scores out of 5) a story needs to be drafted. --test drafts the top story
 // whatever its score, to prove the prompts and API calls work on engine pull requests.
 const test = process.argv.includes("--test");
-const MIN_TOTAL = test ? 0 : 12;
+const MIN_TOTAL = test ? 0 : 10;
 
 const TRIAGE_MODEL = "claude-haiku-5-5";
 const DRAFT_MODEL = "claude-opus-5-5";
