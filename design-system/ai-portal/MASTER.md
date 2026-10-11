@@ -47,8 +47,9 @@ Wordmark "Ai-Portal" in Bricolage Grotesque 800; the dot of the i is a small sun
 
 ## Home template
 
-1. Hero: tag (section · format), headline question, dek, sky "Read the full answer" button; right column is the yellow short answer with the stamp and editor credit
-2. Notes strip: up to three more pieces in boxed columns with section tags
+1. Hero: the lead's illustration across the top of the left column, then tag (section · format), headline question, dek, sky "Read the full answer" button; right column is the yellow short answer with the stamp and editor credit
+2. Notes strip: up to three more pieces in boxed columns with section tags, each with its illustration on top
+- Article cards and notes show the piece's illustration. Below 720 px (cards) and 860 px (notes) it becomes a 96 px square thumbnail beside the text, so lists stay short on phones.
 3. Ticker band: the two latest SI Observatory entries
 4. "Find your way": section cards
 
