@@ -18,6 +18,11 @@ export default function Home() {
         {lead ? (
           <>
             <div className="q">
+              {lead.image && (
+                <Link className="hero-art" href={`/${lead.pillar}/${lead.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img src={lead.image} alt="" width={1200} height={675} fetchPriority="high" />
+                </Link>
+              )}
               <Link className="tag" data-pillar={lead.pillar} href={`/${lead.pillar}`}>
                 {pillarBySlug(lead.pillar)?.name} · {lead.format}
                 {lead.status === "draft" ? " · Draft" : ""}
@@ -74,6 +79,7 @@ export default function Home() {
         <div className="notes">
           {notes.map((a) => (
             <Link key={a.slug} className="note" href={`/${a.pillar}/${a.slug}`}>
+              {a.image && <img className="note-art" src={a.image} alt="" width={1200} height={675} loading="lazy" />}
               <span className="tag" data-pillar={a.pillar}>
                 {pillarBySlug(a.pillar)?.name}
                 {a.status === "draft" ? " · Draft" : ""}

@@ -164,6 +164,8 @@ main { display: block; }
 .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 0.95; letter-spacing: -0.035em; }
 .hero h1 a { color: inherit; text-decoration: none; }
 .hero h1 mark { background: var(--sun); color: var(--on-sun); padding: 0 0.08em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.hero-art { display: block; margin: -36px -32px 0; border-bottom: var(--rule) solid var(--ink); }
+.hero-art img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .hero .q p { margin: 0; font-size: 1.125rem; max-width: 46ch; }
 .hero .a { background: var(--sun); color: var(--on-sun); padding: 32px 28px; display: grid; gap: 16px; align-content: start; }
 .hero .a .label { color: var(--on-sun); }
@@ -177,8 +179,9 @@ main { display: block; }
 
 /* notes strip: three boxed columns */
 .notes { display: grid; grid-template-columns: repeat(3, 1fr); border: var(--rule) solid var(--ink); border-top: 0; }
-.note { padding: 22px 24px 26px; border-right: var(--rule) solid var(--ink); display: grid; gap: 10px; align-content: start; color: var(--ink); text-decoration: none; }
+.note { grid-template-columns: minmax(0, 1fr); padding: 22px 24px 26px; border-right: var(--rule) solid var(--ink); display: grid; gap: 10px; align-content: start; color: var(--ink); text-decoration: none; }
 .note:last-child { border-right: 0; }
+.note-art { display: block; width: calc(100% + 48px); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -22px -24px 4px; border-bottom: var(--rule) solid var(--ink); }
 .note h3 { font-size: 1.5rem; }
 .note p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
 a.note:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 4px; text-decoration-color: var(--sun); }
@@ -191,10 +194,15 @@ a.note:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; te
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
   .hero .q { border-right: 0; border-bottom: var(--rule) solid var(--ink); padding: 28px 20px; }
+  .hero-art { margin: -28px -20px 0; }
   .hero .a { padding: 24px 20px; }
   .notes { grid-template-columns: 1fr; }
   .note { border-right: 0; border-bottom: var(--rule) solid var(--ink); padding-inline: 20px; }
   .note:last-child { border-bottom: 0; }
+  /* phones: thumbnail beside the text, so lists stay scannable */
+  .note:has(.note-art) { grid-template-columns: 96px minmax(0, 1fr); column-gap: 16px; }
+  .note-art { grid-row: 1 / span 3; justify-self: start; width: 96px; aspect-ratio: 1; margin: 0; border: 2px solid var(--ink); }
+  .note:has(.note-art) h3 { font-size: 1.25rem; }
   .ticker { padding-inline: 20px; }
 }
 
@@ -207,13 +215,18 @@ a.note:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; te
 .section > h2 { font-size: 2rem; }
 
 .card {
-  display: grid; gap: 10px; align-content: start; padding: 20px; background: var(--surface); color: var(--ink); text-decoration: none;
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; align-content: start; padding: 20px; background: var(--surface); color: var(--ink); text-decoration: none;
   border: var(--rule) solid var(--ink); transition: transform 120ms ease, box-shadow 120ms ease;
 }
 .card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow); }
-.card-art { display: block; width: calc(100% + 40px); height: auto; aspect-ratio: 16 / 9; margin: -20px -20px 4px; border-bottom: var(--rule) solid var(--ink); }
+.card-art { display: block; width: calc(100% + 40px); max-width: none; height: auto; aspect-ratio: 16 / 9; margin: -20px -20px 4px; border-bottom: var(--rule) solid var(--ink); }
 .card h3 { font-size: 1.5rem; }
 .card p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+@media (max-width: 720px) {
+  .card:has(.card-art) { grid-template-columns: 96px minmax(0, 1fr); column-gap: 16px; padding: 16px; }
+  .card-art { grid-row: 1 / span 3; width: 96px; aspect-ratio: 1; object-fit: cover; margin: 0; border: 2px solid var(--ink); }
+  .card:has(.card-art) h3 { font-size: 1.25rem; }
+}
 .empty { padding: 24px; border: 2px dashed var(--ink); color: var(--muted); margin: 0; }
 
 /* article */
