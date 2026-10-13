@@ -8,7 +8,8 @@ pillar: super-intelligence
 format: News explainer
 author: davide-serra
 datePublished: '2026-10-13'
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: 'Microsoft''s call for AI kill switches, explained'
 metaDescription: >-
