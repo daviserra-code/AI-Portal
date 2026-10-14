@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-14"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-voice-clone-scams.svg
 imageAlt: "A pink phone showing a jagged sound wave, a blue speech bubble with a matching wave, and a yellow key lying below the bubble."

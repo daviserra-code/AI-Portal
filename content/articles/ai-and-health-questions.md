@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-14"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-and-health-questions.svg
 imageAlt: "A pink phone showing a chat bubble, with a stethoscope draped over it and a yellow first-aid cross on a white square beside it."
