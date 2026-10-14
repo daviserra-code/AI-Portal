@@ -2,8 +2,8 @@
 
 The twice-weekly writer (see `engine/prompts/evergreen.md`) drafts the next unticked topics, top first, and ticks them. The editor can reorder, add or delete lines at any time.
 
-- [ ] live-with-it: Can you trust AI with health questions?
-- [ ] live-with-it: AI voice clones: how the scams work and how to protect your family
+- [x] live-with-it: Can you trust AI with health questions?
+- [x] live-with-it: AI voice clones: how the scams work and how to protect your family
 - [ ] live-with-it: Who owns AI-generated images and text? Copyright in plain English
 - [ ] understand: How do AI image generators work?
 - [ ] use: Is a paid AI subscription worth it?
