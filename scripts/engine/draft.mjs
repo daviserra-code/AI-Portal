@@ -229,6 +229,17 @@ if (candidates.length) {
 // The editor's checks, for the Telegram message (scripts/editor/notify.mjs).
 fs.writeFileSync(path.join(root, "engine-checks.json"), JSON.stringify(Object.fromEntries(results.filter((r) => r.file).map((r) => [path.relative(root, r.file), r.checks]))));
 
+// A summary for the "no drafts today" Telegram message (scripts/editor/quiet.mjs).
+const best = scored.find((t) => !t.existing) ?? scored[0];
+fs.writeFileSync(path.join(root, "engine-summary.json"), JSON.stringify({
+  feeds: feeds.length,
+  silentFeeds: health.filter((h) => h.parsed === 0).map((h) => h.name),
+  stories: stories.length,
+  candidates: candidates.length,
+  minTotal: MIN_TOTAL,
+  best: best ? { headline: best.story.headline, total: best.total, reason: best.existing ? `fits the existing page ${best.existing}` : best.reason } : null,
+}));
+
 // Drafted stories never come back; the editor rejects one by deleting its file.
 const drafted = results.filter((r) => r.file);
 if (drafted.length) {
