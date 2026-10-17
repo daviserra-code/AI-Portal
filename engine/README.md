@@ -20,7 +20,7 @@ The full plan is the "AI-Portal content engine" doc. In short:
 | `scripts/engine/collect.mjs` | Reads all feeds and returns ranked stories. |
 | `scripts/engine/dry-run.mjs` | Writes `engine-report.md`: today's picks, roundup candidates, feed health. No model. |
 | `scripts/engine/draft.mjs` | Triage (Claude Haiku 5.5) and drafting (Claude Opus 5.5), the content gate, and `engine-drafts.md`. |
-| `.github/workflows/engine.yml` | Runs daily at 06:00 Italian time and opens a "Drafts for <day>" pull request. Needs the `ANTHROPIC_API_KEY` secret. |
+| `.github/workflows/engine.yml` | Runs daily at 06:00 Italian time and opens a "Drafts for <day>" pull request. On a day with no drafts it sends a silent one-line Telegram message instead (`scripts/editor/quiet.mjs`), so a quiet day never looks like a broken engine. Needs the `ANTHROPIC_API_KEY` secret. |
 
 Run it locally with `npm run engine:dry-run`, or `ANTHROPIC_API_KEY=... npm run engine:draft` to draft.
 

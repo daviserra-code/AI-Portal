@@ -48,6 +48,7 @@ jobs:
         run: |
           if [ -z "$(git status --porcelain content/articles)" ]; then
             echo "No new drafts today."
+            node scripts/editor/quiet.mjs
             exit 0
           fi
           DAY="$(TZ=Europe/Rome date '+%-d %B')"
