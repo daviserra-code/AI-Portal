@@ -2,6 +2,8 @@ name: Publish
 # The editor publishes a pull request of drafts by commenting /publish on it. This marks every
 # draft in it as approved by the editor, checks and builds the site, merges, and deploys.
 # Only the repository owner's comment counts, so a draft never goes live without the editor.
+# If the pull request was already merged with the Merge button, its drafts are on main but still
+# hidden, so /publish approves them there and deploys.
 on:
   issue_comment:
     types: [created]
@@ -32,12 +34,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Acknowledge
         run: |
-          if [ "$(gh pr view "$PR" --json state --jq .state)" != "OPEN" ]; then
-            gh pr comment "$PR" --body "This one is already published (or closed), so there is nothing to do."
+          STATE=$(gh pr view "$PR" --json state --jq .state)
+          if [ "$STATE" = "MERGED" ]; then
+            echo "MERGED=1" >> "$GITHUB_ENV"
+          elif [ "$STATE" != "OPEN" ]; then
+            gh pr comment "$PR" --body "This one is closed, so there is nothing to publish."
             exit 1
           fi
           gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket >/dev/null
       - name: Check out the pull request
+        if: env.MERGED != '1'
         run: gh pr checkout "$PR"
       - uses: actions/setup-node@v4
         with:
@@ -53,8 +59,13 @@ jobs:
             exit 1
           fi
           node scripts/editor/approve.mjs "$EDITOR" $FILES
+          if [ "$MERGED" = "1" ] && [ -z "$(git status --porcelain content)" ]; then
+            gh pr comment "$PR" --body "Everything in this one is already published, so there is nothing to do."
+            echo "NOTHING=1" >> "$GITHUB_ENV"
+          fi
 
       - name: Check and build
+        if: env.NOTHING != '1'
         run: |
           if ! npm run check:content > check.log 2>&1 || ! npm run build >> check.log 2>&1; then
             { echo "Not published: the site check failed. Fix these and comment /publish again."; echo; echo '```'; grep -E '^(error|warn)|Error' check.log | head -30; echo '```'; } > reply.md
@@ -63,6 +74,7 @@ jobs:
           fi
 
       - name: Merge and deploy
+        if: env.MERGED != '1'
         run: |
           git config user.name "AI-Portal publisher"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -84,5 +96,18 @@ jobs:
           fi
           gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/$(gh pr view "$PR" --json headRefName --jq .headRefName)" || true
           # A merge made by this workflow does not start other workflows, so start the deploy here.
+          gh workflow run deploy.yml --ref main
+          gh pr comment "$PR" --body "Published. The site is deploying now."
+
+      - name: Approve on main and deploy (pull request already merged)
+        if: env.MERGED == '1' && env.NOTHING != '1'
+        run: |
+          git config user.name "AI-Portal publisher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content
+          git commit -m "Approved by $EDITOR (#$PR)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # A push made by this workflow does not start other workflows, so start the deploy here.
           gh workflow run deploy.yml --ref main
           gh pr comment "$PR" --body "Published. The site is deploying now."
