@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+  <g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+    <line x1="400" y1="300" x2="320" y2="150" stroke-width="8"/>
+    <line x1="480" y1="300" x2="560" y2="150" stroke-width="8"/>
+    <circle cx="320" cy="150" r="14" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="560" cy="150" r="14" fill="#FFFFFF" stroke-width="5"/>
+    <rect x="234" y="314" width="440" height="200" fill="#121212" stroke-width="8"/>
+    <rect x="220" y="300" width="440" height="200" fill="#FFFFFF" stroke-width="8"/>
+    <rect x="260" y="340" width="120" height="30" fill="#FFFFFF" stroke-width="5"/>
+    <circle cx="610" cy="355" r="12" fill="#121212" stroke-width="5"/>
+    <line x1="260" y1="450" x2="620" y2="450" stroke-width="5"/>
+    <rect x="250" y="500" width="40" height="20" fill="#FFFFFF" stroke-width="5"/>
+    <rect x="590" y="500" width="40" height="20" fill="#FFFFFF" stroke-width="5"/>
+    <path d="M660 420 C 760 420, 760 560, 860 560" fill="none" stroke-width="8"/>
+    <path d="M820 380 L820 330 C820 270, 900 270, 900 330 L900 380" fill="none" stroke-width="8"/>
+    <rect x="790" y="380" width="140" height="120" fill="#FFD23F" stroke-width="8"/>
+    <circle cx="860" cy="430" r="12" fill="#121212" stroke-width="5"/>
+    <line x1="860" y1="440" x2="860" y2="470" stroke-width="8"/>
+    <rect x="860" y="530" width="90" height="60" fill="#FFFFFF" stroke-width="8"/>
+    <line x1="950" y1="545" x2="990" y2="545" stroke-width="8"/>
+    <line x1="950" y1="575" x2="990" y2="575" stroke-width="8"/>
+  </g>
+</svg>
