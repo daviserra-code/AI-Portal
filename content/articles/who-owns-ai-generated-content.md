@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-18"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/who-owns-ai-generated-content.svg
 imageAlt: "A framed picture of a hill, with a pink paper tag tied to its corner and a yellow pencil lying across the frame."
