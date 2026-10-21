@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-21"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/how-ai-image-generators-work.svg
 imageAlt: "A picture frame filled with scattered dots on the left, an arrow, and the same frame on the right showing a clear little landscape with hills and a yellow sun."

@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-21"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/is-a-paid-ai-subscription-worth-it.svg
 imageAlt: "An open periwinkle wallet with a yellow coin at its corner, next to a white chat bubble holding three lines."
