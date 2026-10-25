@@ -7,7 +7,7 @@ The twice-weekly writer (see `engine/prompts/evergreen.md`) drafts the next unti
 - [x] live-with-it: Who owns AI-generated images and text? Copyright in plain English
 - [x] understand: How do AI image generators work?
 - [x] use: Is a paid AI subscription worth it?
-- [ ] live-with-it: AI at school: what students, parents and teachers should know
+- [x] live-with-it: AI at school: what students, parents and teachers should know
 - [ ] understand: What is open-source AI, and why does it matter?
 - [ ] super-intelligence: Who regulates AI? The EU, the US, the UK and China compared
 - [ ] use: Using AI to learn: languages, homework help and new skills
