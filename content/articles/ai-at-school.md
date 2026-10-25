@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-25"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-at-school.svg
 imageAlt: "A pink school exercise book lying open beside a pencil, with a chat bubble rising from its pages and a small yellow star above it."
