@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+  <line x1="120" y1="585" x2="1080" y2="585" stroke="#121212" stroke-width="8" stroke-linecap="round"/>
+  <g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="314,305 754,305 754,585 314,585" fill="#121212" stroke-width="8" transform="translate(14,14)"/>
+    <polygon points="380,150 690,150 690,300 380,300" fill="#FFFFFF" stroke-width="8"/>
+    <polygon points="400,170 670,170 670,285 400,285" fill="#CFD8FF" stroke-width="5"/>
+    <polygon points="470,195 600,195 600,245 520,245 495,268 500,245 470,245" fill="#FFFFFF" stroke-width="5"/>
+    <line x1="495" y1="215" x2="575" y2="215" stroke-width="5"/>
+    <line x1="495" y1="230" x2="550" y2="230" stroke-width="5"/>
+    <polygon points="340,300 730,300 760,325 310,325" fill="#FFFFFF" stroke-width="8"/>
+    <polygon points="314,305 754,305 754,585 314,585" fill="#B8F2D0" stroke-width="8"/>
+    <polygon points="314,305 230,235 300,190 384,260" fill="#B8F2D0" stroke-width="8"/>
+    <polygon points="754,305 838,235 768,190 684,260" fill="#B8F2D0" stroke-width="8"/>
+    <line x1="314" y1="370" x2="754" y2="370" stroke-width="5"/>
+    <circle cx="905" cy="545" r="34" fill="#FFD23F" stroke-width="8"/>
+    <circle cx="905" cy="545" r="11" fill="#FFFDF6" stroke-width="5"/>
+    <polyline points="939,545 1040,545 1040,572" fill="none" stroke-width="8"/>
+    <line x1="1010" y1="545" x2="1010" y2="568" stroke-width="8"/>
+  </g>
+</svg>
