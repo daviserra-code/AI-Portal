@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-28"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/open-source-ai.svg
 imageAlt: "An open green box with a laptop sitting inside it showing a speech bubble, and a yellow key lying beside the box."

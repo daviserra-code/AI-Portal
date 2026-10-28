@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-28"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/who-regulates-ai.svg
 imageAlt: "Four rubber stamps of different shapes standing in a row on a desk, next to a single sheet of paper with one yellow stamp mark on it."
