@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-30"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/using-ai-to-learn.svg
 imageAlt: "A stack of blue flashcards with a tick on the top card, next to a green speech bubble with sound waves and a small yellow spark above it."

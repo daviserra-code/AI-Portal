@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-10-30"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-and-elections.svg
 imageAlt: "A pink ballot box with a white ballot going into its slot, next to a phone showing a yellow play button under a magnifying glass."
