@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-01"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-chips-and-gpus.svg
 imageAlt: "A large square computer chip with pins on every side, a yellow speech bubble just above its corner, and a row of identical smaller chips lined up beside it."
