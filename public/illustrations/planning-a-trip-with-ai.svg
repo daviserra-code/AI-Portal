@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+<g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+<rect x="164" y="254" width="420" height="300" fill="#121212" stroke-width="8"/>
+<path d="M 300 240 L 300 190 L 420 190 L 420 240" fill="none" stroke-width="8"/>
+<rect x="150" y="240" width="420" height="300" fill="#CFD8FF" stroke-width="8"/>
+<line x1="270" y1="240" x2="270" y2="540" stroke-width="5"/>
+<line x1="450" y1="240" x2="450" y2="540" stroke-width="5"/>
+<rect x="190" y="540" width="40" height="22" fill="#121212" stroke-width="5"/>
+<rect x="490" y="540" width="40" height="22" fill="#121212" stroke-width="5"/>
+<rect x="664" y="184" width="210" height="380" fill="#121212" stroke-width="8"/>
+<rect x="650" y="170" width="210" height="380" fill="#FFFFFF" stroke-width="8"/>
+<line x1="725" y1="200" x2="785" y2="200" stroke-width="5"/>
+<path d="M 680 240 L 830 240 L 830 320 L 730 320 L 705 345 L 708 320 L 680 320 Z" fill="#CFD8FF" stroke-width="5"/>
+<path d="M 700 370 L 830 370 L 830 440 L 805 440 L 808 465 L 780 440 L 700 440 Z" fill="#B8F2D0" stroke-width="5"/>
+<polygon points="900,430 980,400 1060,430 1140,400 1140,580 1060,610 980,580 900,610" fill="#E3D0FF" stroke-width="8"/>
+<line x1="980" y1="400" x2="980" y2="580" stroke-width="5"/>
+<line x1="1060" y1="430" x2="1060" y2="610" stroke-width="5"/>
+<line x1="1062" y1="512" x2="1110" y2="560" stroke-width="16"/>
+<circle cx="1020" cy="470" r="58" fill="#FFD23F" stroke-width="8"/>
+<circle cx="1020" cy="470" r="18" fill="#FFFFFF" stroke-width="5"/>
+</g>
+</svg>
