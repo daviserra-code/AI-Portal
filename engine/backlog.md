@@ -13,8 +13,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] use: Using AI to learn: languages, homework help and new skills
 - [x] live-with-it: AI and elections: fake videos, bots and how to check what you see
 - [x] understand: Why does AI need so many chips, and what is a GPU?
-- [ ] use: Planning a trip with AI: what works and what to double-check
-- [ ] use: Using AI to sort out your inbox, calendar and to-do list
+- [x] use: Planning a trip with AI: what works and what to double-check
+- [x] use: Using AI to sort out your inbox, calendar and to-do list
 - [ ] understand: What is a context window, and why do chatbots forget things?
 - [ ] live-with-it: AI companions and loneliness: what the research says
 - [ ] super-intelligence: What is AGI, and how would we know it had arrived?
