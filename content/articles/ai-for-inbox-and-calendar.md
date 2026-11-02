@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-02"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-inbox-and-calendar.svg
 imageAlt: "An open envelope with a tick list rising out of it, next to a wall calendar with one day circled in yellow."

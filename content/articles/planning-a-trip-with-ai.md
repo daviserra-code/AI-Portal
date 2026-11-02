@@ -5,7 +5,8 @@ pillar: use
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-02"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/planning-a-trip-with-ai.svg
 imageAlt: "A suitcase next to a phone showing two chat bubbles, and a yellow magnifying glass lying on a folded map."
