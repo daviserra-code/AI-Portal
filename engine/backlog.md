@@ -15,8 +15,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] understand: Why does AI need so many chips, and what is a GPU?
 - [x] use: Planning a trip with AI: what works and what to double-check
 - [x] use: Using AI to sort out your inbox, calendar and to-do list
-- [ ] understand: What is a context window, and why do chatbots forget things?
-- [ ] live-with-it: AI companions and loneliness: what the research says
+- [x] understand: What is a context window, and why do chatbots forget things?
+- [x] live-with-it: AI companions and loneliness: what the research says
 - [ ] super-intelligence: What is AGI, and how would we know it had arrived?
 - [ ] use: Using AI for money questions: budgeting, bills and what not to share
 - [ ] understand: How does AI search work, and why do answers cite sources?
