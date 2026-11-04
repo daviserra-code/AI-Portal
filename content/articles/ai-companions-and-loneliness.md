@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-04"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-companions-and-loneliness.svg
 imageAlt: "A white phone with a yellow chat bubble on its screen, sitting at one end of a long, otherwise empty pink park bench."

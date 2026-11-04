@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-04"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/context-windows-and-memory.svg
 imageAlt: "A chat window with a yellow sticky note pinned to its corner, feeding a long paper strip that is torn in the middle, where a lilac scrap has lost its lines."
