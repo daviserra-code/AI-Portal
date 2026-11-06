@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+<g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+<rect x="164" y="134" width="240" height="420" fill="#121212" stroke-width="8"/>
+<rect x="150" y="120" width="240" height="420" fill="#FFFFFF" stroke-width="8"/>
+<line x1="240" y1="150" x2="300" y2="150" stroke-width="5"/>
+<path d="M 180 200 L 360 200 L 360 290 L 240 290 L 212 318 L 216 290 L 180 290 Z" fill="#CFD8FF" stroke-width="5"/>
+<line x1="205" y1="232" x2="330" y2="232" stroke-width="5"/>
+<line x1="205" y1="260" x2="290" y2="260" stroke-width="5"/>
+<path d="M 200 350 L 360 350 L 360 420 L 335 420 L 338 445 L 310 420 L 200 420 Z" fill="#B8F2D0" stroke-width="5"/>
+<line x1="225" y1="385" x2="330" y2="385" stroke-width="5"/>
+<path d="M 494 314 L 584 254 L 834 254 Q 934 254 934 384 Q 934 494 834 514 L 834 574 L 774 574 L 774 524 L 634 524 L 634 574 L 574 574 L 574 504 Q 494 474 494 384 Z" fill="#121212" stroke-width="8"/>
+<path d="M 480 300 L 570 240 L 820 240 Q 920 240 920 370 Q 920 480 820 500 L 820 560 L 760 560 L 760 510 L 620 510 L 620 560 L 560 560 L 560 490 Q 480 460 480 370 Z" fill="#CFD8FF" stroke-width="8"/>
+<polygon points="570,240 600,190 640,240" fill="#CFD8FF" stroke-width="8"/>
+<circle cx="560" cy="330" r="10" fill="#121212" stroke-width="4"/>
+<rect x="440" y="350" width="44" height="50" fill="#CFD8FF" stroke-width="8"/>
+<line x1="650" y1="270" x2="750" y2="270" stroke-width="10"/>
+<circle cx="700" cy="150" r="52" fill="#FFD23F" stroke-width="8"/>
+<circle cx="700" cy="150" r="28" fill="none" stroke-width="5"/>
+<line x1="600" y1="110" x2="620" y2="125" stroke-width="5"/>
+<line x1="790" y1="110" x2="770" y2="125" stroke-width="5"/>
+<rect x="974" y="404" width="190" height="120" fill="#121212" stroke-width="8"/>
+<rect x="960" y="390" width="190" height="120" fill="#FFFFFF" stroke-width="8"/>
+<rect x="960" y="415" width="190" height="24" fill="#121212" stroke-width="5"/>
+<line x1="980" y1="480" x2="1040" y2="480" stroke-width="5"/>
+<path d="M 1035 380 L 1035 340 Q 1035 305 1070 305 Q 1105 305 1105 340 L 1105 380" fill="none" stroke-width="10"/>
+<rect x="1015" y="370" width="110" height="90" fill="#FFB3C7" stroke-width="8"/>
+<circle cx="1070" cy="405" r="10" fill="#121212" stroke-width="4"/>
+<rect x="1064" y="410" width="12" height="28" fill="#121212" stroke-width="4"/>
+</g>
+</svg>
