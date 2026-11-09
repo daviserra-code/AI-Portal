@@ -20,8 +20,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] super-intelligence: What is AGI, and how would we know it had arrived?
 - [x] use: Using AI for money questions: budgeting, bills and what not to share
 - [ ] understand: How does AI search work, and why do answers cite sources?
-- [ ] live-with-it: Will AI take my job? What the evidence says so far
-- [ ] super-intelligence: What do AI labs mean by 'alignment'?
+- [x] live-with-it: Will AI take my job? What the evidence says so far
+- [x] super-intelligence: What do AI labs mean by 'alignment'?
 - [ ] use: Using AI on your phone: assistants built into Android and iPhone
 - [ ] understand: What are AI agents allowed to do on your computer?
 - [ ] live-with-it: AI and your privacy at home: smart speakers, doorbells and cameras
