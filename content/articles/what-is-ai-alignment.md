@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-ai-alignment.svg
 imageAlt: "A purple shopping trolley on a straight dashed line leading to a yellow flag, with its front wheel turned sharply off to the side and an arrow curving away from the line."

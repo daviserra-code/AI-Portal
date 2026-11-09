@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-09"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-and-jobs-evidence.svg
 imageAlt: "A pink ladder with its bottom rungs missing, next to a desk with a computer screen, and a yellow briefcase waiting on the floor beneath the ladder."
