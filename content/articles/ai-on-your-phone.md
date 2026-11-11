@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-11-11"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-on-your-phone.svg
 imageAlt: "A phone with a yellow speech bubble on its screen, and an arrow running from the phone up to a cloud."
