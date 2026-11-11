@@ -22,8 +22,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [ ] understand: How does AI search work, and why do answers cite sources?
 - [x] live-with-it: Will AI take my job? What the evidence says so far
 - [x] super-intelligence: What do AI labs mean by 'alignment'?
-- [ ] use: Using AI on your phone: assistants built into Android and iPhone
-- [ ] understand: What are AI agents allowed to do on your computer?
+- [x] use: Using AI on your phone: assistants built into Android and iPhone
+- [x] understand: What are AI agents allowed to do on your computer?
 - [ ] live-with-it: AI and your privacy at home: smart speakers, doorbells and cameras
 - [ ] use: Using AI to cook and plan meals: recipes, shopping lists and allergies
 - [ ] understand: What is multimodal AI? Chatbots that see, hear and speak
