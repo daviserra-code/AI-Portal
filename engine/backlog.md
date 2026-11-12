@@ -17,10 +17,20 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] use: Using AI to sort out your inbox, calendar and to-do list
 - [x] understand: What is a context window, and why do chatbots forget things?
 - [x] live-with-it: AI companions and loneliness: what the research says
-- [ ] super-intelligence: What is AGI, and how would we know it had arrived?
-- [ ] use: Using AI for money questions: budgeting, bills and what not to share
+- [x] super-intelligence: What is AGI, and how would we know it had arrived?
+- [x] use: Using AI for money questions: budgeting, bills and what not to share
 - [ ] understand: How does AI search work, and why do answers cite sources?
 - [x] live-with-it: Will AI take my job? What the evidence says so far
 - [x] super-intelligence: What do AI labs mean by 'alignment'?
 - [x] use: Using AI on your phone: assistants built into Android and iPhone
 - [x] understand: What are AI agents allowed to do on your computer?
+- [ ] live-with-it: AI and your privacy at home: smart speakers, doorbells and cameras
+- [ ] use: Using AI to cook and plan meals: recipes, shopping lists and allergies
+- [ ] understand: What is multimodal AI? Chatbots that see, hear and speak
+- [ ] super-intelligence: Could AI ever be conscious? What scientists actually argue
+- [ ] live-with-it: AI and older people: helpful tools, common scams and how to start
+- [ ] use: Using AI to shop smarter: comparing products, reviews and prices
+- [ ] understand: How is an AI model trained, from data to chatbot?
+- [ ] super-intelligence: What is an AI 'frontier model', and who decides the risks?
+- [ ] live-with-it: AI in hospitals and doctors' offices: what changes for patients
+- [ ] understand: What is fine-tuning, and why do companies build their own AI?
