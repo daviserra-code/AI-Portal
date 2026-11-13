@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-11-13"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-cooking-and-meal-plans.svg
 imageAlt: "A cooking pot next to a phone showing two chat bubbles, with a yellow kitchen thermometer leaning against the pot."

@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Guide
 author: davide-serra
 datePublished: "2026-11-13"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-privacy-at-home.svg
 imageAlt: "A pink front door with a video doorbell beside it, and a small smart speaker on a shelf next to a closed yellow padlock."
