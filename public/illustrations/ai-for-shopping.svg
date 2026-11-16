@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+<g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+<polygon points="214,264 614,264 654,584 174,584" fill="#121212" stroke-width="8"/>
+<path d="M 300 250 L 300 170 L 500 170 L 500 250" fill="none" stroke-width="8"/>
+<polygon points="200,250 600,250 640,570 160,570" fill="#CFD8FF" stroke-width="8"/>
+<line x1="270" y1="250" x2="270" y2="300" stroke-width="5"/>
+<line x1="530" y1="250" x2="530" y2="300" stroke-width="5"/>
+<line x1="500" y1="170" x2="560" y2="230" stroke-width="5"/>
+<polygon points="540,220 620,220 650,250 650,340 540,340" fill="#FFD23F" stroke-width="8"/>
+<circle cx="565" cy="245" r="9" fill="#FFFFFF" stroke-width="5"/>
+<line x1="565" y1="290" x2="625" y2="290" stroke-width="5"/>
+<line x1="565" y1="315" x2="605" y2="315" stroke-width="5"/>
+<rect x="764" y="164" width="230" height="400" fill="#121212" stroke-width="8"/>
+<rect x="750" y="150" width="230" height="400" fill="#FFFFFF" stroke-width="8"/>
+<line x1="835" y1="180" x2="895" y2="180" stroke-width="5"/>
+<path d="M 780 220 L 950 220 L 950 300 L 830 300 L 805 325 L 808 300 L 780 300 Z" fill="#CFD8FF" stroke-width="5"/>
+<path d="M 800 360 L 950 360 L 950 440 L 925 440 L 928 465 L 900 440 L 800 440 Z" fill="#B8F2D0" stroke-width="5"/>
+<line x1="810" y1="400" x2="870" y2="400" stroke-width="5"/>
+<line x1="810" y1="260" x2="900" y2="260" stroke-width="5"/>
+</g>
+</svg>
