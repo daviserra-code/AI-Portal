@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-11-16"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-shopping.svg
 imageAlt: "A shopping bag next to a phone showing two chat bubbles, with a yellow price tag hanging from the bag's handle."

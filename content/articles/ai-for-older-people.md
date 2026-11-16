@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Guide
 author: davide-serra
 datePublished: "2026-11-16"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-older-people.svg
 imageAlt: "A pink phone showing lines of text, with a white speech bubble above it, round reading glasses to its left and a yellow magnifying glass to its right."
