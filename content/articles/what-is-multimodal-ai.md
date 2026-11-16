@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-15"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-multimodal-ai.svg
 imageAlt: "A phone showing a camera lens and a speech bubble, next to a photo of mountains under a yellow magnifying glass, with a sound wave and two sound arcs nearby."
