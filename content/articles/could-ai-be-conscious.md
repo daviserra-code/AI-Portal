@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-18"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/could-ai-be-conscious.svg
 imageAlt: "A lilac laptop with a stethoscope pressed against its screen, the tube curving up to a pair of earpieces, next to a small yellow heart."

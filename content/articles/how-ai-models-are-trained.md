@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-18"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/how-ai-models-are-trained.svg
 imageAlt: "A stack of paper pages with an arrow pointing into a mint-green machine with dials and sliders, and a second arrow leading out to a speech bubble with a yellow tick mark on its corner."
