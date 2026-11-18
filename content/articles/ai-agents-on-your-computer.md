@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-11"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-agents-on-your-computer.svg
 imageAlt: "An open laptop with a mouse pointer on its screen, next to a key on a ring with a yellow tag."
