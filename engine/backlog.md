@@ -24,3 +24,23 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] super-intelligence: What do AI labs mean by 'alignment'?
 - [x] use: Using AI on your phone: assistants built into Android and iPhone
 - [x] understand: What are AI agents allowed to do on your computer?
+- [x] live-with-it: AI and your privacy at home: smart speakers, doorbells and cameras
+- [x] use: Using AI to cook and plan meals: recipes, shopping lists and allergies
+- [x] understand: What is multimodal AI? Chatbots that see, hear and speak
+- [x] super-intelligence: Could AI ever be conscious? What scientists actually argue
+- [x] live-with-it: AI and older people: helpful tools, common scams and how to start
+- [x] use: Using AI to shop smarter: comparing products, reviews and prices
+- [x] understand: How is an AI model trained, from data to chatbot?
+- [ ] super-intelligence: What is an AI 'frontier model', and who decides the risks?
+- [ ] live-with-it: AI in hospitals and doctors' offices: what changes for patients
+- [ ] understand: What is fine-tuning, and why do companies build their own AI?
+- [ ] use: Using AI to make sense of paperwork: contracts, letters and forms
+- [ ] live-with-it: AI in cars: driver assistance, self-driving and what is real today
+- [ ] understand: What is an AI benchmark, and why do companies keep quoting them?
+- [ ] super-intelligence: Who is trying to build superintelligence, and what have they promised?
+- [ ] use: Using AI with your photos: editing, sorting and what is fair to change
+- [ ] live-with-it: AI and music: generated songs, copied voices and artists' rights
+- [ ] understand: What is a small language model, and why run AI on your own device?
+- [ ] super-intelligence: What is recursive self-improvement, and should we worry about it?
+- [ ] use: Using AI in a small business: where it pays off first
+- [ ] live-with-it: AI and your bank: fraud checks, credit decisions and your rights
