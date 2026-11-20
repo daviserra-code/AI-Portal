@@ -31,8 +31,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] live-with-it: AI and older people: helpful tools, common scams and how to start
 - [x] use: Using AI to shop smarter: comparing products, reviews and prices
 - [x] understand: How is an AI model trained, from data to chatbot?
-- [ ] super-intelligence: What is an AI 'frontier model', and who decides the risks?
-- [ ] live-with-it: AI in hospitals and doctors' offices: what changes for patients
+- [x] super-intelligence: What is an AI 'frontier model', and who decides the risks?
+- [x] live-with-it: AI in hospitals and doctors' offices: what changes for patients
 - [ ] understand: What is fine-tuning, and why do companies build their own AI?
 - [ ] use: Using AI to make sense of paperwork: contracts, letters and forms
 - [ ] live-with-it: AI in cars: driver assistance, self-driving and what is real today
