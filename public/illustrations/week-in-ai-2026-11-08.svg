@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFDF6"/>
+  <g stroke="#121212" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="714" y="134" width="300" height="460" fill="#121212" stroke-width="8"/>
+    <rect x="700" y="120" width="300" height="460" fill="#FFFFFF" stroke-width="8"/>
+    <line x1="700" y1="235" x2="1000" y2="235" stroke-width="5"/>
+    <line x1="700" y1="350" x2="1000" y2="350" stroke-width="5"/>
+    <line x1="700" y1="465" x2="1000" y2="465" stroke-width="5"/>
+    <rect x="730" y="168" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <rect x="770" y="168" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <line x1="840" y1="179" x2="970" y2="179" stroke-width="5"/>
+    <rect x="730" y="283" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <rect x="770" y="283" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <line x1="840" y1="294" x2="970" y2="294" stroke-width="5"/>
+    <rect x="730" y="398" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <rect x="770" y="398" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <line x1="840" y1="409" x2="970" y2="409" stroke-width="5"/>
+    <rect x="730" y="513" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <rect x="770" y="513" width="22" height="22" fill="#121212" stroke-width="5"/>
+    <line x1="840" y1="524" x2="970" y2="524" stroke-width="5"/>
+    <polygon points="214,354 594,354 594,594 214,594" fill="#121212" stroke-width="8"/>
+    <polygon points="200,340 580,340 580,580 200,580" fill="#FFFFFF" stroke-width="8"/>
+    <polygon points="200,340 270,280 650,280 580,340" fill="#FFFFFF" stroke-width="8"/>
+    <polygon points="580,340 650,280 650,520 580,580" fill="#FFFFFF" stroke-width="8"/>
+    <polygon points="350,320 410,298 530,298 470,320" fill="#121212" stroke-width="5"/>
+    <polygon points="400,309 420,150 530,165 510,309" fill="#FFD23F" stroke-width="8"/>
+    <line x1="440" y1="200" x2="500" y2="208" stroke-width="5"/>
+    <polyline points="440,250 455,265 485,235" fill="none" stroke-width="5"/>
+    <line x1="270" y1="460" x2="510" y2="460" stroke-width="5"/>
+  </g>
+</svg>
