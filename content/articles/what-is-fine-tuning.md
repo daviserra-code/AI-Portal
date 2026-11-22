@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-22"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-fine-tuning.svg
 imageAlt: "A mint-green speech bubble with lines of text, plugged into a large round dial with a curved arrow showing it being turned, and a yellow star above the dial."
