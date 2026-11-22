@@ -33,7 +33,7 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] understand: How is an AI model trained, from data to chatbot?
 - [x] super-intelligence: What is an AI 'frontier model', and who decides the risks?
 - [x] live-with-it: AI in hospitals and doctors' offices: what changes for patients
-- [ ] understand: What is fine-tuning, and why do companies build their own AI?
+- [x] understand: What is fine-tuning, and why do companies build their own AI?
 - [ ] use: Using AI to make sense of paperwork: contracts, letters and forms
 - [ ] live-with-it: AI in cars: driver assistance, self-driving and what is real today
 - [ ] understand: What is an AI benchmark, and why do companies keep quoting them?
