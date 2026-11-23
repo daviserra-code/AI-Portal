@@ -5,7 +5,8 @@ pillar: live-with-it
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-23"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-in-cars.svg
 imageAlt: "A pink car seen from the side with an empty steering wheel inside, a road sign beside it and a yellow speech bubble above its roof."

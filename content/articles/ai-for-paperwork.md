@@ -5,7 +5,8 @@ pillar: use
 format: Guide
 author: davide-serra
 datePublished: "2026-11-23"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/ai-for-paperwork.svg
 imageAlt: "A stack of papers with a magnifying glass over the top sheet, beside a smaller form with tick boxes held by a yellow paper clip."
