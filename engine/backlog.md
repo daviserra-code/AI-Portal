@@ -34,8 +34,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] super-intelligence: What is an AI 'frontier model', and who decides the risks?
 - [x] live-with-it: AI in hospitals and doctors' offices: what changes for patients
 - [x] understand: What is fine-tuning, and why do companies build their own AI?
-- [ ] use: Using AI to make sense of paperwork: contracts, letters and forms
-- [ ] live-with-it: AI in cars: driver assistance, self-driving and what is real today
+- [x] use: Using AI to make sense of paperwork: contracts, letters and forms
+- [x] live-with-it: AI in cars: driver assistance, self-driving and what is real today
 - [ ] understand: What is an AI benchmark, and why do companies keep quoting them?
 - [ ] super-intelligence: Who is trying to build superintelligence, and what have they promised?
 - [ ] use: Using AI with your photos: editing, sorting and what is fair to change
