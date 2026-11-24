@@ -9,7 +9,8 @@ pillar: live-with-it
 format: News explainer
 author: davide-serra
 datePublished: '2026-11-24'
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 metaTitle: Why US states are suing SpaceX over Grok deepfakes
 metaDescription: >-
