@@ -5,7 +5,8 @@ pillar: understand
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-25"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/what-is-an-ai-benchmark.svg
 imageAlt: "A clipboard with a test sheet showing three ticked boxes and one empty one, next to a bar chart whose tallest bar is topped by a yellow star."

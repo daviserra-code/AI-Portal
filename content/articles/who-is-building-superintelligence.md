@@ -5,7 +5,8 @@ pillar: super-intelligence
 format: Explainer
 author: davide-serra
 datePublished: "2026-11-25"
-status: draft
+status: approved
+approvedBy: davide-serra
 madeWith: ai-assisted
 image: /illustrations/who-is-building-superintelligence.svg
 imageAlt: "Three purple building cranes of different heights, each lifting a white block, with a yellow sun in the sky and a small figure watching from the ground."
