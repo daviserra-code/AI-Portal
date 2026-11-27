@@ -17,8 +17,8 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] use: Using AI to sort out your inbox, calendar and to-do list
 - [x] understand: What is a context window, and why do chatbots forget things?
 - [x] live-with-it: AI companions and loneliness: what the research says
-- [ ] super-intelligence: What is AGI, and how would we know it had arrived?
-- [ ] use: Using AI for money questions: budgeting, bills and what not to share
+- [x] super-intelligence: What is AGI, and how would we know it had arrived?
+- [x] use: Using AI for money questions: budgeting, bills and what not to share
 - [ ] understand: How does AI search work, and why do answers cite sources?
 - [x] live-with-it: Will AI take my job? What the evidence says so far
 - [x] super-intelligence: What do AI labs mean by 'alignment'?
