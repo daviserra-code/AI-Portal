@@ -38,9 +38,19 @@ The writer (Monday, Wednesday, Friday and Sunday) (see `engine/prompts/evergreen
 - [x] live-with-it: AI in cars: driver assistance, self-driving and what is real today
 - [x] understand: What is an AI benchmark, and why do companies keep quoting them?
 - [x] super-intelligence: Who is trying to build superintelligence, and what have they promised?
-- [ ] use: Using AI with your photos: editing, sorting and what is fair to change
-- [ ] live-with-it: AI and music: generated songs, copied voices and artists' rights
+- [x] use: Using AI with your photos: editing, sorting and what is fair to change
+- [x] live-with-it: AI and music: generated songs, copied voices and artists' rights
 - [ ] understand: What is a small language model, and why run AI on your own device?
 - [ ] super-intelligence: What is recursive self-improvement, and should we worry about it?
 - [ ] use: Using AI in a small business: where it pays off first
 - [ ] live-with-it: AI and your bank: fraud checks, credit decisions and your rights
+- [ ] understand: What is a reasoning model, and why does AI 'think' before it answers?
+- [ ] use: Using AI to find a job: CVs, cover letters and interview practice
+- [ ] live-with-it: AI at work: monitoring, hiring algorithms and your rights
+- [ ] super-intelligence: Could AI help cure diseases? What AI for science has actually done
+- [ ] understand: How does AI translation work, and how good is it now?
+- [ ] use: Using AI for home repairs and DIY: photos, steps and safety
+- [ ] live-with-it: AI in the news: who writes what you read, and how to tell
+- [ ] super-intelligence: What would a pause on advanced AI mean, and who is calling for one?
+- [ ] understand: What is synthetic data, and why are AIs trained on AI-made text?
+- [ ] use: Using AI to plan workouts and track your fitness
